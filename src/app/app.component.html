@@ -1,9 +1,18 @@
-<h1>
-  {{title}}
-</h1>
 
-<ul>
-  <li class="text" *ngFor="let item of testItemsDeleteMe | async">
-    {{ item | json }}
-  </li>
-</ul>
+<nav class="header">
+     <!-- <a href="#" class="logo"></a> NOT USED SINCE NO LOGO -->
+     <input class="menu-btn" type="checkbox" id="menu-btn" />
+     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+     <ul class="menu">
+       <li><a href="#">About Us</a></li>
+       <li><a href="#">Services</a></li>
+       <li><a href="#">Wiki</a></li>
+       <li><a href="#">How it works</a></li>
+     </ul>
+</nav>  
+
+<div class="row">
+  <div class="col-xs-4"><button class="btn btn-success">test 1</button></div>
+  <div class="col-xs-4"><button class="btn btn-success">test 2</button></div>
+  <div class="col-xs-4"><button class="btn btn-success">test 3</button></div>
+</div>
