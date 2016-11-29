@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    /*To keep from hiding under navbar*/
+    padding-top: 50px;
+}

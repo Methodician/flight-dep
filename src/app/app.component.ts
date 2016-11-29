@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { AngularFire, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2';
 
