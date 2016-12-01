@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { CollapseDirective } from 'ng2-bootstrap';
 
 const Routes: Routes = [
   { path: 'work', component: HomeComponent },
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     AboutComponent,
     WorkComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    CollapseDirective
   ],
   imports: [
     BrowserModule,
