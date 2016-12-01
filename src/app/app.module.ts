@@ -11,7 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 
 const Routes: Routes = [
-  { path: 'work', component: WorkComponent },
+  { path: 'work', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', component: HomeComponent }
