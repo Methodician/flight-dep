@@ -1,4 +1,4 @@
-.home-section{
+section{
     background-color: gray;
     border: 2px solid slateblue;
     margin: 10px;
@@ -32,3 +32,11 @@
 .section-box{
     text-align: center;
 }
+.responsive{
+    text-align: center;
+}
+.laptop-example{
+    width: 90vw;
+
+}
+
