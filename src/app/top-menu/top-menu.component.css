@@ -8,7 +8,11 @@ img {
     background-color: blanchedalmond;
 }
 
+
 .navbar-header {
     background: #fff;
     border-bottom: none;
+}
+.navbar-collapse {
+    overflow: hidden;
 }
