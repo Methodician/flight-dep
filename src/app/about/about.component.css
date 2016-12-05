@@ -1,0 +1,28 @@
+.about-container{
+    padding: 15px;
+    text-align: center;
+}
+
+section{
+    /*border: 1px solid blue;*/
+    height: calc(100vh - 200px);
+    margin: 15px;
+    width: 35vw;
+    display: inline-block;
+    /*padding: 5px;*/
+}
+
+.picture{
+    background-color: cadetblue;
+    /*display: inline-block;*/
+    width: 35vw;
+    height: 35vw;
+    margin-bottom: 2vh;
+}
+
+article{
+    /*display: inline-block;*/
+    width: 35vw;
+    height: calc(100% - 38vw);
+    background-color: dimgrey;
+}
