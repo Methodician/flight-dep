@@ -7,3 +7,7 @@ img {
 .menu-active {
     background-color: blanchedalmond;
 }
+
+.navbar-collapse {
+    overflow: hidden;
+}
