@@ -17,3 +17,20 @@ textarea{
 button{
     margin-left: 15px;
 }
+
+.ng-dirty.ng-invalid {
+    border: 4px solid rgba(256, 0, 0, 0.5);
+}
+
+/*.ng-touched.ng-invalid {
+    border: 2px solid #ff2118 !important;
+}*/
+
+
+form.ng-dirty.ng-invalid {
+    border:none;
+}
+
+form.ng-touched.ng-invalid {
+    border:none !important;
+}
