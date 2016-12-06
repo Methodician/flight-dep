@@ -17,9 +17,9 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "mobile": false,
-      "styles": [
-        "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      "styles": [        
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
       ],
       "scripts": [
         "../3rd-party/scripts/web-animations.min.js"
