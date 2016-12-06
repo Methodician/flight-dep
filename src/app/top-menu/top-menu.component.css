@@ -1,18 +1,49 @@
-
 img {
     width: 33px;
     height: 33px;
 }
 
-.menu-active {
-    background-color: blanchedalmond;
-}
-
-
+/*===== NAV =====*/
 .navbar-header {
     background: #fff;
-    border-bottom: none;
+}
+.navbar-default {
+    background-color: transparent;
+}
+.navbar-toggle {
+    padding: 10px 10px;
 }
 .navbar-collapse {
     overflow: hidden;
+    border-top: 0px solid transparent;
+}
+.navbar-fixed-top {
+    border-width: 0 0 0;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff;
+    background-color: rgba(28, 27, 23, 0.9);
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+/*===== NAV EXPANDED =====*/
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+     background-color: #fff; 
+}
+.menu-active {
+    background-color: #000;
+}
+.navbar-nav {
+        margin: 0px -15px;
+}
+.navbar-nav>li>a {
+    text-align: center;
+}
+.navbar-default .navbar-nav>li>a {
+    color: rgba(252, 248, 227, 0.67);
 }
