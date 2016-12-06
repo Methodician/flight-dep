@@ -22,7 +22,7 @@ img {
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #fff;
-    background-color: rgba(28, 27, 23, 0.9);
+    background-color: rgba(28, 27, 23, 0.84);
 }
 .navbar-default .navbar-toggle {
     border-color: #fff;
@@ -40,10 +40,11 @@ img {
 }
 .navbar-nav {
         margin: 0px -15px;
+        padding: 20px;
 }
 .navbar-nav>li>a {
     text-align: center;
 }
 .navbar-default .navbar-nav>li>a {
-    color: rgba(252, 248, 227, 0.67);
+    color: rgba(255, 255, 255, 0.85);
 }
