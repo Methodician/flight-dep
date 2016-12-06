@@ -33,8 +33,8 @@ section{
 
 .graphics-placeholder{
     /*background-color: lightsteelblue;*/
-    height: 155px;
-    width: 155px;
+    height: 120px;
+    width: 120px;
     margin: 5px;
     display: inline-block;
 }
