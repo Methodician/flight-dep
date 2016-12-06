@@ -5,13 +5,15 @@ img {
 
 /*===== NAV =====*/
 .navbar-header {
-    background: #fff;
+    /*background: #fff;*/
 }
 .navbar-default {
     background-color: transparent;
 }
 .navbar-toggle {
     padding: 20px 15px;
+    background-color: rgba(255, 255, 255, 0.66);
+    border: 0px solid transparent;
 }
 .navbar-collapse {
     overflow: hidden;
