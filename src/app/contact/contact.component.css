@@ -1,0 +1,19 @@
+
+
+.form-control{
+    width: auto;
+    margin-left: 5px;
+}
+
+.row{
+    margin: 5px 0 5px 0;
+}
+
+textarea{
+    width: 60vw !important;
+    height: 30vw;
+}
+
+button{
+    margin-left: 15px;
+}
