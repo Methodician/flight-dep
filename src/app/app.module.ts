@@ -1,3 +1,4 @@
+import { ContactService } from './contact/contact.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -10,6 +11,7 @@ import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { CollapseDirective } from 'ng2-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const Routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -40,9 +42,10 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(Routes),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

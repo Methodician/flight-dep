@@ -1,3 +1,26 @@
-<p>
-  contact works!
-</p>
+<form [formGroup]="form" autocomplete="off" novalidate class="lesson-form">
+  <fieldset>
+    <legend>We'd love to hear from you!</legend>
+    <div class="form-field row">
+      <label class="col-xs-3">Name:</label>
+      <input class="col-xs-9 form-control" name="name" formControlName="name">
+      <div class="field-error-message" *ngIf="isErrorVisible('name','required')">field is required</div>
+    </div>
+    <div class="form-field row">
+      <label class="col-xs-3">Email:</label>
+      <input class="col-xs-9 form-control" name="email" formControlName="email">
+      <div class="field-error-message" *ngIf="isErrorVisible('email','required')">field is required</div>
+    </div>
+    <div class="form-field row">
+      <label class="col-xs-3">Phone: (optional)</label>
+      <input class="col-xs-9 form-control" name="phone" formControlName="phone">
+      <!--<div class="field-error-message" *ngIf="isErrorVisible('phone','validEmail')">not a valid url</div>-->
+    </div>
+    <div class="form-field row">
+      <label class="col-xs-3">Message:</label>
+      <textarea class="col-xs-9 form-control" name="message" formControlName="message"></textarea>
+    </div>
+  </fieldset>
+</form>
+
+<button class="btn btn-success" (click)="submit()">Submit</button>
