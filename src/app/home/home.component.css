@@ -74,6 +74,7 @@ section{
 }
 .tablet-example{
     width: 55vw;
+    padding-top: 19px;
 }
 .mobile-example{
     width: 25vw;
