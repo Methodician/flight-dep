@@ -3,7 +3,9 @@
     <legend>We'd love to hear from you!</legend>
     <div class="form-field row">
       <label class="col-xs-3">*Name:</label>
-      <input class="col-xs-9 form-control" name="name" formControlName="name">
+      <div class="input-container">
+        <input id="test" class="col-xs-9 form-control" name="name" formControlName="name">
+      </div>
       <div class="field-error-message" *ngIf="isErrorVisible('name','required')">field is required</div>
     </div>
     <div class="form-field row">

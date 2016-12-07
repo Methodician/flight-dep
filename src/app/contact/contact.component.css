@@ -1,4 +1,13 @@
 
+.input-container {
+    position: relative;
+    float: left;
+}
+.input-container:after{
+    position: absolute;
+    left: 10px;
+    content: 'Testing';
+}
 
 .form-control{
     width: auto;

@@ -13,6 +13,8 @@ import { validatePhoneNumber } from '../shared/validators/validatePhoneNumber';
 })
 export class ContactComponent implements OnInit {
 
+  name = "*Name:";
+
   form: FormGroup;
   constructor(private fb: FormBuilder, private contactSvc: ContactService) {
     this.form = this.fb.group({
