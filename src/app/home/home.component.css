@@ -48,9 +48,9 @@ section{
 }
 
 .apps-placeholder{
-    background-color: turquoise;
-    height: 145px;
-    width: 250px;
+    /*background-color: turquoise;*/
+    height: 200px;
+    width: 100%;
     margin: 5px;
     display: inline-block;
 }
