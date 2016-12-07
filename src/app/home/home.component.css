@@ -1,7 +1,7 @@
 section{
     background-color: white;
     border: 0px solid slateblue;
-    margin: 0px 10px;
+    margin: 0;
     padding: 10px;
     width: calc(100vw - 20px);
 }
@@ -48,9 +48,9 @@ section{
 }
 
 .apps-placeholder{
-    background-color: turquoise;
-    height: 145px;
-    width: 250px;
+    /*background-color: turquoise;*/
+    height: 200px;
+    width: 100%;
     margin: 5px;
     display: inline-block;
 }
@@ -74,6 +74,7 @@ section{
 }
 .tablet-example{
     width: 55vw;
+    padding-top: 19px;
 }
 .mobile-example{
     width: 25vw;
@@ -86,5 +87,7 @@ section{
     padding: 30px 0px;
 }
 
-
+#sites {
+    background-color: #e7e7e7;
+}
 
