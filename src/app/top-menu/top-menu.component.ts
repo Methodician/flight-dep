@@ -11,43 +11,43 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
       /*transition('1 => 0', [animate('170ms ease-in')]),*/
       /*transition('0 => 1', [animate('200ms ease-out')])*/
       // for dev:
-      transition('1 => 0', [animate('500ms ease-in')]),
-      transition('0 => 1', [animate('700ms ease-out')])
+      transition('1 => 0', [animate('300ms ease-in')]),
+      transition('0 => 1', [animate('400ms ease-out')])
     ]),
     trigger('navButtonCollapsed', [
       state('false', style({ transform: 'translateX(-50vw)' })),
       state('true', style({ transform: 'translateX(0)' })),
-      transition('1 => 0', [animate('500ms ease-in')]),
-      transition('0 => 1', [animate('700ms ease-out')])
+      transition('1 => 0', [animate('300ms ease-in')]),
+      transition('0 => 1', [animate('400ms ease-out')])
     ]),
     trigger('topBarCollapsed', [
       state('true', style({ transform: 'rotate(0) translateX(0)', width: '*' })),
-      state('false', style({ transform: 'rotate(25deg) translateX(7px) translateY(-1px)' })),
+      state('false', style({ transform: 'rotate(25deg) translateX(7px) translateY(-1px)', width: '20px' })),
       /*
       state('true', style({ transform: 'rotate(-30deg) translateX(-3px)', width: '17px' })),
       state('false', style({ transform: 'rotate(35deg) translateY(200%) translateX(20%)' })),
       */
       /*transition('1 <=> 0', [animate('170ms')])*/
       // for dev:
-      transition('1 <=> 0', [animate('500ms')])
+      transition('1 <=> 0', [animate('300ms')])
     ]),
     trigger('middleBarCollapsed', [
-      state('true', style({ width: '20px' })),
-      state('false', style({ width: '*' })),
+      state('true', style({ width: '*' })),
+      state('false', style({ width: '24px' })),
       /*transition('1 <=> 0', [animate('170ms')])*/
       // for dev:
-      transition('1 <=> 0', [animate('500ms')])
+      transition('1 <=> 0', [animate('300ms')])
     ]),
     trigger('bottomBarCollapsed', [
       state('true', style({ transform: 'rotate(0) translateX(0)', width: '*' })),
-      state('false', style({ transform: 'rotate(-25deg) translateX(7px) translateY(1px)' })),
+      state('false', style({ transform: 'rotate(-25deg) translateX(7px) translateY(1px)', width: '20px' })),
       /*
       state('true', style({ transform: 'rotate(30deg) translateX(-3px)', width: '17px' })),
       state('false', style({ transform: 'rotate(-35deg) translateY(-200%) translateX(20%)' })),
       */
       /*transition('1 <=> 0', [animate('170ms')])*/
       // for dev:
-      transition('1 <=> 0', [animate('500ms')])
+      transition('1 <=> 0', [animate('300ms')])
     ])
   ]
 })

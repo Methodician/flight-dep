@@ -20,18 +20,21 @@ img {
     padding: 15px;
     border-radius: 10px 0 0 10px;
     /*padding: 20px 15px;*/
-    background-color: #fcf8e3 !important;
+    background-color: #fff7d4 !important;
     /*background-color: rgba(255, 255, 255, 0.66);*/
     border: none;
 }
 #top-bar {
-    width: 20px;
+    width: 4px;
+    height: 3px;
 }
 #middle-bar {
-    width: 24px;
+    width: 4px;
+    height: 3px;
 }
 #bottom-bar {
-    width: 20px;
+    width: 4px;
+    height: 3px;
 }
 
 .navmenu {
@@ -65,10 +68,10 @@ img {
 }
 .navbar-nav {
         margin: 0px -15px;
-        padding: 20px;
+        padding: 28px;
 }
 .navbar-nav>li>a {
-    text-align: center;
+    text-align: right;
 }
 .navbar-default .navbar-nav>li>a {
     color: rgba(255, 255, 255, 0.85);
