@@ -40,9 +40,9 @@ section{
 }
 
 .sites-placeholder{
-    background-color: lightsteelblue;
-    height: 80px;
-    width: 120px;
+    /*background-color: lightsteelblue;*/
+    height: 200px;
+    width: 320px;
     margin: 5px;
     display: inline-block;
 }
