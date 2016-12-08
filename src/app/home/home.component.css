@@ -28,6 +28,10 @@ section{
     height: 100%;
 }
 
+#homeHeading {
+    margin-top: 200px;
+}
+
 .icons-example{
     /*background-color: sandybrown;*/
     height: 75px;
