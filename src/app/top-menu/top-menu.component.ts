@@ -11,14 +11,14 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
             /*transition('1 => 0', [animate('170ms ease-in')]),*/
             /*transition('0 => 1', [animate('200ms ease-out')])*/
             // for dev:
-            transition('1 => 0', [animate('300ms ease-in')]),
-            transition('0 => 1', [animate('400ms ease-out')])
+            transition('1 => 0', [animate('250ms ease-in')]),
+            transition('0 => 1', [animate('380ms ease-out')])
         ]),
         trigger('navButtonCollapsed', [
             state('false', style({ transform: 'translateX(-50vw)' })),
             state('true', style({ transform: 'translateX(0)' })),
-            transition('1 => 0', [animate('300ms ease-in')]),
-            transition('0 => 1', [animate('400ms ease-out')])
+            transition('1 => 0', [animate('250ms ease-in')]),
+            transition('0 => 1', [animate('380ms ease-out')])
         ]),
         trigger('topBarCollapsed', [
             state('true', style({ transform: 'rotate(0) translateX(0)', width: '*' })),
@@ -29,14 +29,14 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
             */
             /*transition('1 <=> 0', [animate('170ms')])*/
             // for dev:
-            transition('1 <=> 0', [animate('300ms')])
+            transition('1 <=> 0', [animate('250ms')])
         ]),
         trigger('middleBarCollapsed', [
             state('true', style({ width: '*' })),
             state('false', style({ width: '27px' })),
             /*transition('1 <=> 0', [animate('170ms')])*/
             // for dev:
-            transition('1 <=> 0', [animate('300ms')])
+            transition('1 <=> 0', [animate('250ms')])
         ]),
         trigger('bottomBarCollapsed', [
             state('true', style({ transform: 'rotate(0) translateX(0)', width: '*' })),
@@ -47,7 +47,7 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
             */
             /*transition('1 <=> 0', [animate('170ms')])*/
             // for dev:
-            transition('1 <=> 0', [animate('300ms')])
+            transition('1 <=> 0', [animate('250ms')])
         ])
     ]
 })
