@@ -4,10 +4,6 @@
     text-align: center;
 }
 
-h1 {
-    
-}
-
 a {
     color: #337ab7;
 }
@@ -24,7 +20,7 @@ section{
 img{
     width:84vw;
     /*height: 65vw;*/
-    margin-bottom: 2vh;
+    /*margin-bottom: 2vh;*/
 }
 
 article{
