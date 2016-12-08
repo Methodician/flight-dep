@@ -4,12 +4,15 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { validateEmail } from '../shared/validators/validateEmail';
 import { validatePhoneNumber } from '../shared/validators/validatePhoneNumber';
+import { routerTransition } from '../shared/animations/router.animations';
 
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
+  animations: [routerTransition()],
+  host: { '[@routerTransition]': '' }
 })
 export class ContactComponent implements OnInit {
 

@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { CollapseDirective } from 'ng2-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 const Routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     WorkComponent,
     ContactComponent,
     HomeComponent,
-    CollapseDirective
+    CollapseDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
