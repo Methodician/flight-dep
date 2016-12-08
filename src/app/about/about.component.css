@@ -8,6 +8,10 @@ h1 {
     
 }
 
+a {
+    color: #337ab7;
+}
+
 section{
     /*border: 1px solid blue;*/
     /*height: calc(100vh - 200px);*/

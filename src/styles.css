@@ -8,3 +8,7 @@ body {
 .pageHeader {
     margin-top: 100px;
 }
+
+a {
+    color: #fcf8e3;
+}
