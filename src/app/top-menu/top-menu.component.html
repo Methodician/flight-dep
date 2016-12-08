@@ -1,26 +1,29 @@
 <!--<nav class="navbar navbar-default navbar-fixed-top">-->
 <!--  <div class="container-fluid nav-container">-->
 <!--      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"-->
-<button type="button" class="navbar-toggle collapsed" [@navButtonCollapsed]="isCollapsed" data-toggle="collapse" (click)="isCollapsed = !isCollapsed">
+<div class="side-menu" (clickOutside)="isCollapsed = true">
+  <button type="button" class="navbar-toggle collapsed" [@navButtonCollapsed]="isCollapsed" data-toggle="collapse" (click)="isCollapsed = !isCollapsed">
     <span class="sr-only">Toggle navigation</span>
     <span id="top-bar" class="icon-bar" [@topBarCollapsed]="isCollapsed"></span>
     <span id="middle-bar" class="icon-bar" [@middleBarCollapsed]="isCollapsed"></span>
     <span id="bottom-bar" class="icon-bar" [@bottomBarCollapsed]="isCollapsed"></span>
   </button>
-<!--<a routerLink="" class="navbar-brand" (click)="isCollapsed = true"></a>-->
-<div id="navbar" class="navmenu" [@navCollapsed]="isCollapsed" (click)="isCollapsed = true">
-  <ul class="nav navbar-nav">
-    <li>
-      <a routerLink="home" routerLinkActive="menu-active">WORK</a>
-    </li>
-    <li>
-      <a routerLink="about" routerLinkActive="menu-active">ABOUT</a>
-    </li>
-    <li>
-      <a routerLink="contact" routerLinkActive="menu-active">CONTACT</a>
-    </li>
-  </ul>
+  <!--<a routerLink="" class="navbar-brand" (click)="isCollapsed = true"></a>-->
+  <div id="navbar" class="navmenu" [@navCollapsed]="isCollapsed" (click)="isCollapsed = true">
+    <ul class="nav navbar-nav">
+      <li>
+        <a routerLink="home" routerLinkActive="menu-active">WORK</a>
+      </li>
+      <li>
+        <a routerLink="about" routerLinkActive="menu-active">ABOUT</a>
+      </li>
+      <li>
+        <a routerLink="contact" routerLinkActive="menu-active">CONTACT</a>
+      </li>
+    </ul>
+  </div>
 </div>
+
 <!-- /.navbar-collapse -->
 <!--  </div>-->
 <!-- /.container-fluid -->

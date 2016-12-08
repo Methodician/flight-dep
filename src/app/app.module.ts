@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { CollapseDirective } from 'ng2-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ClickOutsideDirective } from './shared/directives/click-outside.directive';
 
 const Routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -39,7 +40,8 @@ export const firebaseConfig = {
     ContactComponent,
     HomeComponent,
     CollapseDirective,
-    FooterComponent
+    FooterComponent,
+    ClickOutsideDirective
   ],
   imports: [
     BrowserModule,
