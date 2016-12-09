@@ -3,32 +3,34 @@
     <legend>We'd love to hear from you!</legend>
     <div class="form-field row">
       <!--<label class="col-xs-3">*Name:</label>-->
-      <div class="input-container">
-        <input id="test" class="col-xs-9 form-control" name="name" formControlName="name">
-      </div>
+      <!--
+        HELPS CREATE THE PERSISTENT PLACEHOLDER-LIKE THING
+        <div class="input-container">-->
+      <input id="test" class="col-xs-9 form-control" name="name" formControlName="name" placeholder="*Name">
+      <!--      </div>-->
       <div class="field-error-message" *ngIf="isErrorVisible('name','required')">field is required</div>
     </div>
     <div class="form-field row">
       <!--<label class="col-xs-3">*Email:</label>-->
-      <input class="col-xs-9 form-control" name="email" formControlName="email">
+      <input class="col-xs-9 form-control" name="email" formControlName="email" placeholder="*Email">
       <div class="field-error-message" *ngIf="isErrorVisible('email','required')">field is required</div>
       <div class="field-error-message" *ngIf="isErrorVisible('email','validEmail') && !isErrorVisible('email', 'required')">email address not vaild</div>
     </div>
     <div class="form-field row">
       <!--<label class="col-xs-3">Phone:</label>-->
-      <input class="col-xs-9 form-control" name="phone" formControlName="phone">
+      <input class="col-xs-9 form-control" name="phone" formControlName="phone" placeholder="Phone">
       <!--<div class="field-error-message" *ngIf="isErrorVisible('phone','validEmail')">not a valid url</div>-->
     </div>
     <div class="form-field row">
       <!--<label class="col-xs-3">*Message:</label>-->
-      <textarea class="col-xs-9 form-control" name="message" formControlName="message"></textarea>
+      <textarea class="col-xs-9 form-control" name="message" formControlName="message" placeholder="*Message"></textarea>
       <div class="field-error-message" *ngIf="isErrorVisible('message','required')">field is required</div>
     </div>
   </fieldset>
 </form>
-
-<button [disabled]="!form.valid" class="btn btn-success" (click)="submit()">Submit</button>
 <p>( * denotes required field )</p>
+<button [disabled]="!form.valid" class="btn btn-success" (click)="submit()">Submit</button>
+
 
 <!-- 
 ====================================

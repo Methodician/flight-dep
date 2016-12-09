@@ -10,11 +10,15 @@ legend {
     position: relative;
     float: left;
 }
+
+/*
+CREATES A PERSISTENT PLACEHOLDER TYPE THING:
 .input-container:after{
     position: absolute;
     left: 10px;
     content: 'Testing';
 }
+*/
 
 .form-control{
     width: auto;
