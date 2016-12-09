@@ -2,25 +2,25 @@
   <fieldset>
     <legend>We'd love to hear from you!</legend>
     <div class="form-field row">
-      <label class="col-xs-3">*Name:</label>
+      <!--<label class="col-xs-3">*Name:</label>-->
       <div class="input-container">
         <input id="test" class="col-xs-9 form-control" name="name" formControlName="name">
       </div>
       <div class="field-error-message" *ngIf="isErrorVisible('name','required')">field is required</div>
     </div>
     <div class="form-field row">
-      <label class="col-xs-3">*Email:</label>
+      <!--<label class="col-xs-3">*Email:</label>-->
       <input class="col-xs-9 form-control" name="email" formControlName="email">
       <div class="field-error-message" *ngIf="isErrorVisible('email','required')">field is required</div>
       <div class="field-error-message" *ngIf="isErrorVisible('email','validEmail') && !isErrorVisible('email', 'required')">email address not vaild</div>
     </div>
     <div class="form-field row">
-      <label class="col-xs-3">Phone:</label>
+      <!--<label class="col-xs-3">Phone:</label>-->
       <input class="col-xs-9 form-control" name="phone" formControlName="phone">
       <!--<div class="field-error-message" *ngIf="isErrorVisible('phone','validEmail')">not a valid url</div>-->
     </div>
     <div class="form-field row">
-      <label class="col-xs-3">*Message:</label>
+      <!--<label class="col-xs-3">*Message:</label>-->
       <textarea class="col-xs-9 form-control" name="message" formControlName="message"></textarea>
       <div class="field-error-message" *ngIf="isErrorVisible('message','required')">field is required</div>
     </div>
