@@ -2,7 +2,7 @@
 body {
     /*To keep from hiding under navbar*/
     /*padding-top: 50px;*/
-    font-family: "Gill Sans",Helvetica, Arial, sans-serif;
+    font-family: "Gill Sans", Arial, sans-serif;
 }
 
 .pageHeader {
@@ -26,4 +26,5 @@ section{
 
 a {
     color: #fcf8e3;
+    font-size: 1.3em;
 }
