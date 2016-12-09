@@ -1,7 +1,4 @@
-/*#home-container {
-    text-align: center;
-    
-}*/
+
 section{
     background-color: white;
     border: 0px solid slateblue;
@@ -101,3 +98,22 @@ section{
     margin: 0;
 }
 
+
+/*most phones landscape mode*/
+@media screen and (min-width : 500px){
+
+}
+
+/*iPad portrait mode*/
+@media screen and (min-width: 760px){
+
+}
+
+/*iPad landscape mode*/
+@media screen and (min-width: 1020px){
+
+    #responsive{
+    padding-top: 200px;
+    }
+
+}

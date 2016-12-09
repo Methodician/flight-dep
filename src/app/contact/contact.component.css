@@ -1,14 +1,4 @@
-/*.about-container{
-    margin: 0px 0px 0px;
-}*/
 
-/*form {
-    padding: 15px;
-}
-
-legend {
-    padding: 0px 0px 5px;
-}*/
 
 p {
     text-align: center;
@@ -69,4 +59,71 @@ form.ng-dirty.ng-invalid {
 
 form.ng-touched.ng-invalid {
     border:none !important;
+}
+
+/*
+////////////////FROM ABOUT.COMPONENT.CSS\\\\\\\\\\\\\\\\\\
+*/
+
+a {
+    color: #337ab7;
+    font-size: 1em;
+}
+
+img{
+    width:84vw;
+    /*height: 65vw;*/
+    /*margin-bottom: 2vh;*/
+}
+
+article{
+    /*width: 65vw;*/
+    font-size: 1.2em;
+    font-weight: 300;
+    /*height: calc(100% - 38vw);*/
+    /*background-color: dimgrey;*/
+}
+
+.about-container{
+    margin: 0px 0px 150px;
+    padding: 15px;
+    text-align: center;
+}
+
+.pageHeader {
+    margin-top: 70px;
+}
+
+section{
+    /*border: 1px solid blue;*/
+    /*height: calc(100vh - 200px);*/
+    margin: 15px;
+    width: 85vw;
+    /*display: inline-block;*/
+    /*text-align: left;*/
+}
+
+/*Maybe for tablet/desktop*/
+/*section{
+    border: 1px solid blue;
+    height: calc(100vh - 200px);
+    margin: 15px;
+    width: 35vw;
+    display: inline-block;
+}*/
+
+/*most phones landscape mode*/
+@media screen and (min-width : 500px){
+
+}
+
+/*iPad portrait mode*/
+@media screen and (min-width: 760px){
+
+}
+
+/*iPad landscape mode*/
+@media screen and (min-width: 1020px){
+
+
 }
