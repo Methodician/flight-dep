@@ -102,6 +102,8 @@ section{
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
 
+
+
 }
 
 /*iPad portrait mode*/
@@ -113,7 +115,11 @@ section{
 @media screen and (min-width: 1020px){
 
     #responsive{
-    padding-top: 200px;
+        padding-top: 200px;
+    }
+
+    .tablet-example, .mobile-example {
+        margin-top: -150px;
     }
 
 }
