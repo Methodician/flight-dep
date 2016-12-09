@@ -1,9 +1,17 @@
-form {
+/*.about-container{
+    margin: 0px 0px 0px;
+}*/
+
+/*form {
     padding: 15px;
 }
 
 legend {
-    padding: 70px 0px 5px;
+    padding: 0px 0px 5px;
+}*/
+
+p {
+    text-align: center;
 }
 
 .input-container {
@@ -23,6 +31,8 @@ CREATES A PERSISTENT PLACEHOLDER TYPE THING:
 .form-control{
     width: auto;
     margin-left: 5px;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
 .row{
@@ -30,12 +40,18 @@ CREATES A PERSISTENT PLACEHOLDER TYPE THING:
 }
 
 textarea{
-    width: 60vw !important;
+    width: 89vw !important;
     height: 30vw;
 }
 
+input{
+    width: 89vw !important;
+}
+
 button{
-    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 5px;
+    float: right;
 }
 
 .ng-dirty.ng-invalid {
