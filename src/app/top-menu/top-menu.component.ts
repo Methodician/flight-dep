@@ -15,8 +15,8 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
             transition('0 => 1', [animate('380ms ease-out')])
         ]),
         trigger('navButtonCollapsed', [
-            state('false', style({ transform: 'translateX(-50vw)' })),
-            state('true', style({ transform: 'translateX(0)' })),
+            state('false', style({ right: '*' })),
+            state('true', style({ right: '0' })),
             transition('1 => 0', [animate('250ms ease-in')]),
             transition('0 => 1', [animate('380ms ease-out')])
         ]),
