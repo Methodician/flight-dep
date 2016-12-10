@@ -101,25 +101,141 @@ section{
 
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
+    #homeHeading {
+        margin-top: -13vh;
+    }
+    
+    #heroImg {
+        width: 60%;
+    }
+    
+    .laptop-example{
+        margin-top: 5px;
+    }
 
-
-
-}
-
-/*iPad portrait mode*/
-@media screen and (min-width: 760px){
-
-}
-
-/*iPad landscape mode*/
-@media screen and (min-width: 1020px){
-
-    #responsive{
-        padding-top: 200px;
+    #icons {
+        padding: 30px 80px;
     }
 
     .tablet-example, .mobile-example {
-        margin-top: -150px;
+        margin-top: -65px;
+    }
+}
+
+/*Nexus 6P and iPhone6 Plus landscape*/
+@media screen and (min-width : 732px) {
+    #homeHeading {
+        margin-top: -11vh;
     }
 
+    #heroImg {
+        width: 65%;
+    }
+
+    #icons {
+        padding: 30px 0px;
+    }
+
+    .tablet-example, .mobile-example {
+        margin-top: -95px;
+    }
+}
+
+/*iPad portrait mode*/
+@media screen and (min-width : 760px){
+    #homeHeading {
+        margin-top: 15vh;
+        font-size: 3em;
+    }
+
+    #hero {
+        font-size: 2em;
+    }
+
+    #heroImg {
+        width: 90%;
+    }
+
+    #icons {
+        padding: 30px 0px;
+    }
+}
+
+/*iPad landscape mode*/
+@media screen and (min-width : 1020px){
+    #homeHeading {
+        margin-top: 10vh;
+        font-size: 2.5em;
+    }
+
+    #hero {
+        font-size: 1.5em;
+    }
+    
+    #heroImg {
+        width: 60%;
+    }
+
+    #responsive{
+        padding-top: 10px;
+    }
+
+    .tablet-example, .mobile-example {
+        margin-top: -170px;
+    }
+
+    .icons-example{
+        /*background-color: sandybrown;*/
+        height: 95px;
+        width: 95px;
+    }
+
+    .graphics-example{
+        /*background-color: lightsteelblue;*/
+        height: 180px;
+        width: 180px;
+    }
+
+    .sites-example {
+        width: calc(100vw - 300px);
+    }
+}
+
+/*Desktop view*/
+@media screen and (min-width : 1200px) {
+    #homeHeading {
+        margin-top: 0vh;
+        font-size: 3.5em;
+    }
+
+    #hero {
+        font-size: 2em;
+    }
+
+    #responsive{
+        padding: 10px 50px 70px;
+    }
+
+    .laptop-example{
+        width: calc(100vw - 500px);
+    }
+    .tablet-example{
+        width: calc(55vw - 200px);
+    }
+    .mobile-example{
+        width: calc(25vw - 100px);
+    }
+    .tablet-example, .mobile-example {
+        margin-top: -120px;
+    }
+
+    .icons-example{
+        /*background-color: sandybrown;*/
+        height: 100px;
+        width: 100px;
+    }
+
+    .sites-example {
+        width: calc(100vw - 500px);
+    }
 }
