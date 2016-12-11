@@ -142,7 +142,7 @@ section{
 }
 
 /*iPad portrait mode*/
-@media screen and (min-width : 760px){
+@media screen and (min-width : 760px){    
     #homeHeading {
         margin-top: 15vh;
         font-size: 3em;

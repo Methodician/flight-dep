@@ -107,7 +107,17 @@ ul>li>a {
 
 /*iPad portrait mode*/
 @media screen and (min-width: 760px){
-    
+    .toggle-button {
+        margin-top: 45px;
+        padding: 25px;
+    }
+
+    #top-bar,
+    #middle-bar,
+    #bottom-bar {
+        width: 8px;
+        height: 6px;
+    }
 }
 
 /*iPad landscape mode*/
