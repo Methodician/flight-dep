@@ -38,17 +38,6 @@ img {
     background-color: black;
     display: block;
     border-radius: 2px;
-}
-
-#top-bar {
-    width: 4px;
-    height: 3px;
-}
-#middle-bar {
-    width: 4px;
-    height: 3px;
-}
-#bottom-bar {
     width: 4px;
     height: 3px;
 }
@@ -112,9 +101,7 @@ ul>li>a {
         padding: 25px;
     }
 
-    #top-bar,
-    #middle-bar,
-    #bottom-bar {
+    .icon-bar {
         width: 8px;
         height: 6px;
     }
@@ -122,6 +109,5 @@ ul>li>a {
 
 /*iPad landscape mode*/
 @media screen and (min-width: 1020px){
-
-
+    
 }
