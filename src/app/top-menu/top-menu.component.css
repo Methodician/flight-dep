@@ -96,6 +96,10 @@ ul>li>a {
 
 /*iPad portrait mode*/
 @media screen and (min-width: 760px){
+    .navmenu {
+        width: 100vw;
+    }
+    
     .toggle-button {
         margin-top: 45px;
         padding: 25px;
@@ -104,6 +108,14 @@ ul>li>a {
     .icon-bar {
         width: 8px;
         height: 6px;
+    }
+
+    .toggle-button .icon-bar + .icon-bar {
+        margin-top: 8px;
+    }
+
+    a {
+        font-size: 2em;
     }
 }
 

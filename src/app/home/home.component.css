@@ -8,7 +8,8 @@ section{
 
 .section-header{
     text-align: center;
-    border-bottom: 2px solid black;
+    color: #adadad;
+    /*border-bottom: 2px solid black;*/
 }
 
 .jumbotron {
@@ -19,7 +20,8 @@ section{
 }
 #hero {
     text-align: center;
-    height: calc(100vh - 70px);
+    /*height: calc(100vh - 70px);*/
+    height: 100vh;
 }
 #hero a {
     color: #000;
@@ -70,8 +72,8 @@ section{
 }
 
 #responsive, #icons, #graphics, #sites, #apps {
+    /*padding-top: 20px;*/
     padding-bottom: 50px;
-    padding-top: 50px;
 }
 
 #responsive{
@@ -82,12 +84,12 @@ section{
 }
 .laptop-example{
     width: 85vw;
-    margin-top: -30px;
+    margin-top: -65px;
     margin-bottom: -80px;
 }
 .tablet-example{
     width: 55vw;
-    padding-top: 19px;
+    /*padding-top: 19px;*/
 }
 .mobile-example{
     width: 25vw;
@@ -96,6 +98,7 @@ section{
 #icons {
     background-color: sandybrown;
     margin: 0;
+    margin-bottom: 80px;
     width: 100vw;
     padding: 30px 0px;
 }
@@ -108,6 +111,10 @@ section{
 
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
+    .section-header{
+        padding-top: 50px;
+    }
+
     #homeHeading {
         margin-top: -13vh;
     }
@@ -117,20 +124,25 @@ section{
     }
     
     .laptop-example{
-        margin-top: 5px;
+        margin-top: -105px;
     }
 
     #icons {
-        padding: 30px 80px;
+        padding: 25px 80px;
+        margin-bottom: 65px;
     }
 
     .tablet-example, .mobile-example {
-        margin-top: -65px;
+        margin-top: -75px;
     }
 }
 
 /*Nexus 6P and iPhone6 Plus landscape*/
 @media screen and (min-width : 732px) {
+    .section-header{
+        padding-top: 70px;
+    }
+
     #homeHeading {
         margin-top: -11vh;
     }
@@ -139,17 +151,21 @@ section{
         width: 65%;
     }
 
-    #icons {
-        padding: 30px 0px;
+    .laptop-example{
+        margin-top: -135px;
     }
 
     .tablet-example, .mobile-example {
-        margin-top: -95px;
+        margin-top: -115px;
     }
 }
 
 /*iPad portrait mode*/
-@media screen and (min-width : 760px){    
+@media screen and (min-width : 760px){
+    h2{
+        font-size: 3.5em;
+    }
+
     #homeHeading {
         margin-top: 15vh;
         font-size: 3em;
@@ -172,7 +188,7 @@ section{
 @media screen and (min-width : 1020px){
     #homeHeading {
         margin-top: 10vh;
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
 
     #hero {
@@ -187,8 +203,12 @@ section{
         padding-top: 10px;
     }
 
+    .laptop-example{
+        margin-top: -175px;
+    }
+
     .tablet-example, .mobile-example {
-        margin-top: -170px;
+        margin-top: -195px;
     }
 
     .icons-example{
@@ -225,6 +245,7 @@ section{
 
     .laptop-example{
         width: calc(100vw - 500px);
+        margin-top: -190px;
     }
     .tablet-example{
         width: calc(55vw - 200px);
@@ -232,9 +253,9 @@ section{
     .mobile-example{
         width: calc(25vw - 100px);
     }
-    .tablet-example, .mobile-example {
+    /*.tablet-example, .mobile-example {
         margin-top: -120px;
-    }
+    }*/
 
     .icons-example{
         /*background-color: sandybrown;*/
