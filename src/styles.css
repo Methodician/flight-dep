@@ -11,6 +11,20 @@ a {
     font-size: 1.3em;
 }
 
+.carusel-caption {
+    background-color: black;
+}
+.carusel-caption h4, p {
+    color: wheat;
+    text-align: center;
+}
+.carusel-caption h4 {
+    margin-bottom: 15px;
+}
+/*.carousel-indicators li {
+    
+}*/
+
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
 
@@ -26,3 +40,4 @@ a {
 
 
 }
+
