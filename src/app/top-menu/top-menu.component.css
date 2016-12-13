@@ -99,10 +99,19 @@ ul>li>a {
     .navmenu {
         width: 100vw;
     }
+
+    ul {
+        margin-top: 35vh;
+    }
     
+    ul > li > a {
+        text-align: center;
+    }
+
     .toggle-button {
         margin-top: 45px;
         padding: 25px;
+        z-index: 99999;
     }
 
     .icon-bar {
