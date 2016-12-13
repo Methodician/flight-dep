@@ -10,9 +10,5 @@ import { AngularFire, FirebaseListObservable, FirebaseObjectObservable } from 'a
   animations: [routerTransition()]
 })
 export class AppComponent {
-  title = 'app works!';
-  testItemsDeleteMe: FirebaseListObservable<any[]>;
-  constructor(af: AngularFire) {
-    this.testItemsDeleteMe = af.database.list('/testItemsDeleteMe');
-  }
+
 }

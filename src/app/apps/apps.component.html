@@ -1,10 +1,11 @@
 <div class="apps-wrapper">
-  <h3>Check out these tools</h3>
-  <h4>they saved time and made life better for clients</h4>
-  <p>Community Warehouse app:</p>
+  <h2>Check out these tools</h2>
+  <p>they saved time and made life better for clients</p>
+  <h3>Community Warehouse app</h3>
+  <p>Filter functionality examples:</p>
   <div class="carousel-wrapper">
     <carousel [interval]="6000" [noWrap]="false">
-      <slide class="carousel-slide" *ngFor="let slide of cwSlides; let index=index" [active]="slide.active">
+      <slide class="carousel-slide" *ngFor="let slide of cwHomeSlides; let index=index" [active]="slide.active">
         <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
         <div class="carusel-caption">
           <h4>{{ slide.text }}</h4>
@@ -13,7 +14,45 @@
       </slide>
     </carousel>
   </div>
-  <p>Oil Camp attendent app:</p>
+  <p>Clean customer process forms:</p>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of cwLockSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+        <div class="carusel-caption">
+          <h4>{{ slide.text }}</h4>
+          <p>{{ index + 1 }}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <p>Detail forms:</p>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of cwDetailSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+        <div class="carusel-caption">
+          <h4>{{ slide.text }}</h4>
+          <p>{{ index + 1 }}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <p>Data maintenance forms:</p>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of cwMaintenanceSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+        <div class="carusel-caption">
+          <h4>{{ slide.text }}</h4>
+          <p>{{ index + 1 }}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <br>
+  <br>
+  <h3>Oil Camp attendent app</h3>
   <div class="carousel-wrapper">
     <carousel [interval]="6000" [noWrap]="false">
       <slide class="carousel-slide" *ngFor="let slide of gssSlides; let index=index" [active]="slide.active">

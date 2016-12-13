@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { routerTransition } from '../shared/animations/router.animations';
 
 @Component({
   selector: 'app-apps',
   templateUrl: './apps.component.html',
-  styleUrls: ['./apps.component.css']
+  styleUrls: ['./apps.component.css'],
+  animations: [routerTransition()],
+  host: { '[@routerTransition]': '' }
 })
 export class AppsComponent implements OnInit {
 
-  private cwSlides: Array<any> = [];
+  private cwHomeSlides: Array<any> = [];
+  private cwLockSlides: Array<any> = [];
+  private cwDetailSlides: Array<any> = [];
+  private cwMaintenanceSlides: Array<any> = [];
   private gssSlides: Array<any> = [];
 
   constructor() { }
@@ -17,67 +23,67 @@ export class AppsComponent implements OnInit {
   }
 
   addCwSlides() {
-    this.cwSlides.push({
+    this.cwHomeSlides.push({
       image: '../../assets/images/ODA/cw_menu_open.png',
       text: 'menu open',
       alt: 'community warehouse example with open menu'
     });
-    this.cwSlides.push({
+    this.cwHomeSlides.push({
       image: '../../assets/images/ODA/cw_menu_collapsed.png',
       text: 'menu collapsed',
       alt: 'community warehouse example with collapsed menu'
     });
-    this.cwSlides.push({
+    this.cwHomeSlides.push({
       image: '../../assets/images/ODA/cw_completed_filter.png',
       text: 'completed filter active',
       alt: 'community warehouse example completed filter active'
     });
-    this.cwSlides.push({
+    this.cwHomeSlides.push({
       image: '../../assets/images/ODA/cw_incomplete_filter.png',
       text: 'completed filter off',
       alt: 'community warehouse example completed filter inactive'
     });
-    this.cwSlides.push({
+    this.cwLockSlides.push({
       image: '../../assets/images/ODA/cw_lock_waiver.png',
       text: 'locked area waiver',
       alt: 'community warehouse example locked area waiver'
     });
-    this.cwSlides.push({
+    this.cwLockSlides.push({
       image: '../../assets/images/ODA/cw_lock_items.png',
       text: 'lock area items',
       alt: 'community warehouse example lock area items'
     });
-    this.cwSlides.push({
+    this.cwLockSlides.push({
       image: '../../assets/images/ODA/cw_lock_summary.png',
       text: 'lock area summary',
       alt: 'community warehouse example lock area summary'
     });
-    this.cwSlides.push({
+    this.cwLockSlides.push({
       image: '../../assets/images/ODA/cw_lock_survey.png',
       text: 'lock area survey',
       alt: 'community warehouse example lock area survey'
     });
-    this.cwSlides.push({
+    this.cwDetailSlides.push({
       image: '../../assets/images/ODA/cw_req_details.png',
       text: 'request details',
       alt: 'community warehouse example request details'
     });
-    this.cwSlides.push({
+    this.cwDetailSlides.push({
       image: '../../assets/images/ODA/cw_req_items.png',
       text: 'request items',
       alt: 'community warehouse example request items'
     });
-    this.cwSlides.push({
+    this.cwMaintenanceSlides.push({
       image: '../../assets/images/ODA/cw_agencies.png',
       text: 'case managers',
       alt: 'community warehouse example case managers'
     });
-    this.cwSlides.push({
+    this.cwMaintenanceSlides.push({
       image: '../../assets/images/ODA/cw_case_managers.png',
       text: 'case managers',
       alt: 'community warehouse example case managers'
     });
-    this.cwSlides.push({
+    this.cwMaintenanceSlides.push({
       image: '../../assets/images/ODA/cw_case_manager_edit.png',
       text: 'case managers edit',
       alt: 'community warehouse example case managers edit'
