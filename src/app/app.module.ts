@@ -10,7 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { CollapseDirective } from 'ng2-bootstrap';
+import { CollapseDirective, CarouselModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ClickOutsideDirective } from './shared/directives/click-outside.directive';
@@ -18,7 +18,19 @@ import { AppsComponent } from './apps/apps.component';
 
 const Routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'work', component: WorkComponent },
+  {
+    path: 'work',
+    children: [
+      {
+        path: '',
+        component: WorkComponent
+      },
+      {
+        path: 'apps',
+        component: AppsComponent
+      }
+    ]
+  },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', component: HomeComponent }
@@ -50,7 +62,8 @@ export const firebaseConfig = {
     FormsModule,
     RouterModule.forRoot(Routes),
     AngularFireModule.initializeApp(firebaseConfig),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]

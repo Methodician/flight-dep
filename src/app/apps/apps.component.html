@@ -1,3 +1,30 @@
-<p>
-  apps works!
-</p>
+<div class="apps-wrapper">
+  <h3>Check out these tools</h3>
+  <h4>they saved time and made life better for clients</h4>
+  <p>Community Warehouse app:</p>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of cwSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+        <div class="carusel-caption">
+          <h4>{{ slide.text }}</h4>
+          <p>{{ index + 1 }}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <p>Oil Camp attendent app:</p>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of gssSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+        <div class="carusel-caption">
+          <h4>{{ slide.text }}</h4>
+          <p>{{ index + 1 }}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <h3>Play with our color mixer </h3>
+  <h4>it's fun, but can be useful</h4>
+</div>
