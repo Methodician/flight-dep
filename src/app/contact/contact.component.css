@@ -22,8 +22,8 @@ CREATES A PERSISTENT PLACEHOLDER TYPE THING:
 */
 
 .form-control{
-    width: auto;
-    margin-left: 5px;
+    width: 100%;
+    /*margin-left: 5px;*/
     font-size: 1.2em;
     font-weight: 300;
     color: #fff7d4;
@@ -32,23 +32,27 @@ CREATES A PERSISTENT PLACEHOLDER TYPE THING:
     box-shadow: none;
 }
 
+.form-field {
+    padding: 0 2vw 0 2vw;
+}
+
 .row{
     margin: 5px 0 5px 0;
 }
 
 textarea{
-    width: 89vw !important;
+    /*width: 89vw !important;*/
     height: 40vw;
 }
 
 input{
-    width: 89vw !important;
+    /*width: 89vw !important;*/
     height: 40px;
 }
 
 button{
     margin-top: 10px;
-    /*margin-right: 5px;*/
+    margin-right: 2vw;
     float: right;
 }
 

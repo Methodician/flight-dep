@@ -8,13 +8,15 @@
 
   <form [formGroup]="form" autocomplete="off" novalidate class="lesson-form">
     <fieldset>
-      <legend><h3 class="contacttext">We'd love to hear from you!</h3></legend>
+      <legend>
+        <h3 class="contacttext">We'd love to hear from you!</h3>
+      </legend>
       <div class="form-field row">
         <!--<label class="col-xs-3">*Name:</label>-->
         <!--
           HELPS CREATE THE PERSISTENT PLACEHOLDER-LIKE THING
           <div class="input-container">-->
-        <input id="test" class="col-xs-9 form-control" name="name" formControlName="name" placeholder="*Name">
+        <input class="col-xs-9 form-control" name="name" formControlName="name" placeholder="*Name">
         <!--      </div>-->
         <div class="field-error-message" *ngIf="isErrorVisible('name','required')">field is required</div>
       </div>
