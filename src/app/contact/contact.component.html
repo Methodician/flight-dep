@@ -1,14 +1,14 @@
 <div class="about-container">
   <h1 class="pageHeader">CONTACT</h1>
   <section>
-    <p>
+    <p class="contacttext">
       info.flight.run@gmail.com | Portland, OR
     </p>
   </section>
 
   <form [formGroup]="form" autocomplete="off" novalidate class="lesson-form">
     <fieldset>
-      <legend><h3>We'd love to hear from you!</h3></legend>
+      <legend><h3 class="contacttext">We'd love to hear from you!</h3></legend>
       <div class="form-field row">
         <!--<label class="col-xs-3">*Name:</label>-->
         <!--
@@ -37,7 +37,7 @@
     </fieldset>
   </form>
   <!--<p>( * denotes required field )</p>-->
-  <button [disabled]="!form.valid" class="btn btn-success" (click)="submit()">Submit</button>
+  <button [disabled]="!form.valid" class="btn btn-success" (click)="submit()">SEND MESSAGE</button>
 
 </div>
 

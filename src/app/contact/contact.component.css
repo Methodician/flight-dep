@@ -3,6 +3,9 @@
 p, h3 {
     text-align: left;
 }
+.contacttext {
+    text-align: center;
+}
 
 .input-container {
     position: relative;
@@ -23,6 +26,10 @@ CREATES A PERSISTENT PLACEHOLDER TYPE THING:
     margin-left: 5px;
     font-size: 1.2em;
     font-weight: 300;
+    color: #fff7d4;
+    background-color: #252525;
+    border: 0px solid #ccc;
+    box-shadow: none;
 }
 
 .row{
@@ -31,17 +38,31 @@ CREATES A PERSISTENT PLACEHOLDER TYPE THING:
 
 textarea{
     width: 89vw !important;
-    height: 30vw;
+    height: 40vw;
 }
 
 input{
     width: 89vw !important;
+    height: 40px;
 }
 
 button{
-    margin-top: 20px;
-    margin-right: 5px;
+    margin-top: 10px;
+    /*margin-right: 5px;*/
     float: right;
+}
+
+.btn-success {
+    color: #252525;
+    background-color: #fff7d4;
+    border-color: #fff7d4;
+    font-size: 1.2em;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #60da2d;
+    border-color: #60da2d;
 }
 
 .ng-dirty.ng-invalid {
@@ -85,9 +106,18 @@ article{
 }
 
 .about-container{
-    margin: 0px 0px 150px;
+    /*margin: 0px 0px 150px;*/
     padding: 15px;
     text-align: center;
+}
+
+#aboutDark{
+    color: #fff;
+    background-color: #1c1b17;
+}
+
+#aboutDark p{
+    color: rgba(245, 245, 245, 0.55);
 }
 
 .pageHeader {
