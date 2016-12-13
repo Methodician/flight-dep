@@ -14,7 +14,8 @@ a {
 .carusel-caption {
     background-color: black;
 }
-.carusel-caption h4, p {
+.carusel-caption h4, 
+.carusel-caption p {
     color: wheat;
     text-align: center;
 }
