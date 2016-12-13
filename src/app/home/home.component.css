@@ -111,8 +111,8 @@ section{
 
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
-    .section-header{
-        padding-top: 50px;
+    #hero {
+        padding: 20px;
     }
 
     #homeHeading {
@@ -121,6 +121,11 @@ section{
     
     #heroImg {
         width: 60%;
+        margin-top: -10px;
+    }
+
+    .section-header{
+        padding-top: 50px;
     }
     
     .laptop-example{
@@ -139,16 +144,22 @@ section{
 
 /*Nexus 6P and iPhone6 Plus landscape*/
 @media screen and (min-width : 732px) {
-    .section-header{
-        padding-top: 70px;
+    #hero {
+        padding: 30px;
     }
-
+    
     #homeHeading {
         margin-top: -11vh;
     }
 
     #heroImg {
         width: 65%;
+        padding: 10px;
+        margin-top: -20px;
+    }
+
+    .section-header{
+        padding-top: 70px;
     }
 
     .laptop-example{
@@ -177,6 +188,7 @@ section{
 
     #heroImg {
         width: 90%;
+        margin-top: 0px;
     }
 
     #icons {
@@ -197,6 +209,7 @@ section{
     
     #heroImg {
         width: 60%;
+        padding: 0px;
     }
 
     #responsive{
