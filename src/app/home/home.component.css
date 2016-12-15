@@ -22,7 +22,7 @@ section{
     text-align: center;
     /*height: calc(100vh - 70px);*/
     height: 100vh;
-    background: #fff url(<../../assets/images/flightLogo_notext.png) 50% 0 no-repeat fixed;
+    background: #fff url(<../../assets/images/flightLogo_notext.png) 50% 90% no-repeat fixed;
 }
 #hero a {
     color: #000;
