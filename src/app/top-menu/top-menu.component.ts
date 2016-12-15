@@ -1,4 +1,4 @@
-import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
+import { NgZone, Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 
 @Component({
     selector: 'top-menu',
@@ -8,9 +8,7 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
         trigger('navCollapsed', [
             state('true', style({ width: '0px' })),
             state('false', style({ width: '*' })),
-            /*transition('1 => 0', [animate('170ms ease-in')]),*/
-            /*transition('0 => 1', [animate('200ms ease-out')])*/
-            // for dev:
+
             transition('1 => 0', [animate('250ms ease-in')]),
             transition('0 => 1', [animate('380ms ease-out')])
         ]),
@@ -54,9 +52,63 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
 export class TopMenuComponent implements OnInit {
 
     public isCollapsed: boolean = true;
-    constructor() { }
+    phonesPortrait = true;
+    phonesLandscape = false;
+    bigPhoneLandscape = false;
+    iPadPortrait = false;
+    iPadLandscape = false;
+    desktop = false;
+
+    constructor(ngZone: NgZone) {
+        window.onresize = (event) => {
+            ngZone.run(() => {
+                this.setMediaQueries();
+            });
+        };
+    }
 
     ngOnInit() {
+        this.setMediaQueries();
     }
+
+    showNavBar() {
+        if (this.desktop || this.iPadLandscape || this.iPadPortrait)
+            return true;
+        else return false;
+    }
+    setMediaQueries() {
+        this.mediaQueriesFalse();
+
+        if (window.matchMedia('(min-width : 1200px)').matches) {
+            this.desktop = true;
+            return;
+        }
+        if (window.matchMedia('(min-width: 1020px)').matches) {
+            this.iPadLandscape = true;
+            return;
+        }
+        if (window.matchMedia('(min-width: 760px)').matches) {
+            this.iPadPortrait = true;
+            return;
+        }
+        if (window.matchMedia('(min-width: 732px)').matches) {
+            this.bigPhoneLandscape = true;
+            return;
+        }
+        if (window.matchMedia('(min-width : 500px)').matches) {
+            this.phonesLandscape = true;
+            return;
+        }
+        this.phonesPortrait = true;
+    }
+    mediaQueriesFalse() {
+        this.phonesPortrait = false;
+        this.phonesLandscape = false;
+        this.bigPhoneLandscape = false;
+        this.iPadPortrait = false;
+        this.iPadLandscape = false;
+        this.desktop = false;
+    }
+
 
 }
