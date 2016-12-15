@@ -1,10 +1,8 @@
 <div class="about-container">
   <h1 class="pageHeader">CONTACT</h1>
-  <section>
-    <p class="contacttext">
-      info.flight.run@gmail.com | Portland, OR
-    </p>
-  </section>
+  <p class="contacttext">
+    info.flight.run@gmail.com | Portland, OR
+  </p>
 
   <form [formGroup]="form" autocomplete="off" novalidate class="lesson-form">
     <fieldset>
@@ -41,16 +39,12 @@
   <!--<p>( * denotes required field )</p>-->
   <button [disabled]="!form.valid" class="btn btn-success" (click)="submit()">SEND MESSAGE</button>
 
+  <!-- 
+  ====================================
+  SECTION 6 - FOOTER 
+  ====================================  
+  -->
+
+  <app-footer></app-footer>
+
 </div>
-
-
-
-
-
-<!-- 
-====================================
-SECTION 6 - FOOTER 
-====================================  
--->
-
-<app-footer></app-footer>

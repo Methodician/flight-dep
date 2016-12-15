@@ -7,8 +7,21 @@ footer {
   /*padding-bottom: 50px;*/
 }
 
+/*iPad portrait mode*/
+@media screen and (min-width: 760px){
+  footer {
+    margin-top: 230px;
+  }
+}
+
+/*iPad landscape mode*/
 @media screen and (min-width: 1020px){
-    footer {
-      font-size: 1.3em;
-    }
+  footer {
+    font-size: 1.3em;
+  }
+}
+
+/*Desktop view*/
+@media screen and (min-width : 1200px) {
+
 }
