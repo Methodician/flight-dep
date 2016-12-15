@@ -3,13 +3,10 @@ img {
     height: 33px;
 }
 
-/*===== NAV =====*/
-/*.nav-container {
-    padding-right: 0;
-}*/
-/*.navbar-header {
-    background: #fff;
-}*/
+.side-menu a {
+    color: #fcf8e3;
+    font-size: 1.3em;
+}
 .navbar-default {
     background-color: transparent;
 }
@@ -42,7 +39,7 @@ img {
     height: 3px;
 }
 
-.navmenu {
+.side-navmenu {
     right: 0;
     overflow: hidden;
     border: none;
@@ -55,7 +52,7 @@ img {
 .navbar-fixed-top {
     border: none;
 }
-.navbar-default .navmenu, .navbar-default .navbar-form {
+.navbar-default .side-navmenu, .navbar-default .navbar-form {
     border-color: #fff;
     background-color: rgba(28, 27, 23, 0.84);
 }
@@ -73,7 +70,7 @@ img {
 .menu-active {
     background-color: #000;
 }
-ul {
+.side-menu ul {
     margin: 0px -15px;
     padding: 28px;
 }
@@ -86,7 +83,7 @@ ul>li>a {
 
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
-    .navmenu {
+    .side-navmenu {
         width: 220px;
     }
     .toggle-button {
@@ -96,17 +93,17 @@ ul>li>a {
 
 /*iPad portrait mode*/
 @media screen and (min-width: 760px){
-    .navmenu {
+    .side-navmenu {
         width: 100vw;
     }
 
-    ul {
+/*    ul {
         margin-top: 35vh;
-    }
+    }*/
     
-    ul > li > a {
+/*    ul > li > a {
         text-align: center;
-    }
+    }*/
 
     .toggle-button {
         margin-top: 45px;
