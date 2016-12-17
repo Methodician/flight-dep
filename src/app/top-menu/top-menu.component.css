@@ -4,7 +4,7 @@ img {
 }
 
 .side-menu a {
-    color: #fcf8e3;
+    color: #fff;
     font-size: 1.3em;
 }
 .navbar-default {
@@ -46,7 +46,9 @@ img {
     position: fixed;
     width: 50vw;
     height: 100vh;
-    background-color: rgba(28, 27, 23, 0.84);
+    background-color: rgba(61, 69, 111, 0.98);
+    /*rgba(61, 69, 111, 0.95);
+    rgba(68, 78, 130, 0.95);*/
     z-index: 9999;
 }
 .navbar-fixed-top {
@@ -55,6 +57,7 @@ img {
 .navbar-default .side-navmenu, .navbar-default .navbar-form {
     border-color: #fff;
     background-color: rgba(28, 27, 23, 0.84);
+    /*rgba(28, 27, 23, 0.74)*/
 }
 .navbar-default .toggle-button {
     border-color: #fff;
