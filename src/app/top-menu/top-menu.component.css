@@ -46,7 +46,7 @@ img {
     position: fixed;
     width: 50vw;
     height: 100vh;
-    background-color: rgba(61, 69, 111, 0.98);
+    background-color: rgba(48, 73, 138, 0.98);
     /*rgba(61, 69, 111, 0.95);
     rgba(68, 78, 130, 0.95);*/
     z-index: 9999;
