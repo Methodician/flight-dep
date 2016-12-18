@@ -53,27 +53,18 @@ import {/* NgZone,*/ Component, OnInit, trigger, state, style, transition, anima
 export class TopMenuComponent implements OnInit {
 
     public isCollapsed: boolean = true;
-    /*phonesPortrait = true;
-    phonesLandscape = false;
-    bigPhoneLandscape = false;
-    iPadPortrait = false;
-    iPadLandscape = false;
-    desktop = false;*/
+    private navList = [
+        { link: 'home', text: 'WORK' },
+        { link: 'work/apps', text: 'APPS-TOOLS' },
+        { link: 'about', text: 'ABOUT' },
+        { link: 'contact', text: 'CONTACT' }
+    ];
 
-    /*constructor(ngZone: NgZone) {
-        window.onresize = (event) => {
-            ngZone.run(() => {
-                this.setMediaQueries();
-            });
-        };
-    }*/
-
-    constructor(private qrySvc: MediaQueryService){
+    constructor(private qrySvc: MediaQueryService) {
 
     }
 
     ngOnInit() {
-        /*this.setMediaQueries();*/
     }
 
     showNavBar() {
@@ -81,39 +72,5 @@ export class TopMenuComponent implements OnInit {
             return true;
         else return false;
     }
-/*    setMediaQueries() {
-        this.mediaQueriesFalse();
-
-        if (window.matchMedia('(min-width : 1200px)').matches) {
-            this.desktop = true;
-            return;
-        }
-        if (window.matchMedia('(min-width: 1020px)').matches) {
-            this.iPadLandscape = true;
-            return;
-        }
-        if (window.matchMedia('(min-width: 760px)').matches) {
-            this.iPadPortrait = true;
-            return;
-        }
-        if (window.matchMedia('(min-width: 732px)').matches) {
-            this.bigPhoneLandscape = true;
-            return;
-        }
-        if (window.matchMedia('(min-width : 500px)').matches) {
-            this.phonesLandscape = true;
-            return;
-        }
-        this.phonesPortrait = true;
-    }*/
-/*    mediaQueriesFalse() {
-        this.phonesPortrait = false;
-        this.phonesLandscape = false;
-        this.bigPhoneLandscape = false;
-        this.iPadPortrait = false;
-        this.iPadLandscape = false;
-        this.desktop = false;
-    }*/
-
 
 }

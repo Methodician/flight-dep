@@ -4,10 +4,7 @@ img {
     height: 33px;
 }
 
-.side-menu a {
-    color: #fff;
-    font-size: 1.3em;
-}
+
 .navbar-default {
     background-color: transparent;
 }
@@ -40,6 +37,15 @@ img {
     height: 3px;
 }
 
+.navmenu {
+    background-color: rgba(48, 73, 138, 0.98);
+}
+.navmenu a {
+    color: #fff;
+}
+ .navmenu a:focus {
+     background-color: rgba(28, 27, 23, 0.84); 
+ }
 .side-navmenu {
     right: 0;
     overflow: hidden;
@@ -47,10 +53,12 @@ img {
     position: fixed;
     width: 50vw;
     height: 100vh;
-    background-color: rgba(48, 73, 138, 0.98);
     /*rgba(61, 69, 111, 0.95);
     rgba(68, 78, 130, 0.95);*/
     z-index: 9999;
+}
+.side-menu a {
+    font-size: 1.3em;
 }
 .navbar-fixed-top {
     border: none;
