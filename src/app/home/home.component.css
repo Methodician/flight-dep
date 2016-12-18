@@ -101,7 +101,7 @@ hr {
 
 #responsive, #icons, #graphics, #sites, #apps {
     /*padding-top: 20px;*/
-    padding-bottom: 50px;
+    padding: 40px 0 50px;
 }
 
 #responsive{

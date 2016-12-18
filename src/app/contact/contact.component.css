@@ -42,7 +42,7 @@ CREATES A PERSISTENT PLACEHOLDER TYPE THING:
 
 textarea{
     /*width: 89vw !important;*/
-    height: 40vh;
+    height: 25vh;
 }
 
 input{
@@ -87,7 +87,7 @@ form.ng-touched.ng-invalid {
 }
 
 /*
-////////////////FROM ABOUT.COMPONENT.CSS\\\\\\\\\\\\\\\\\\
+//////////////// FROM ABOUT.COMPONENT.CSS \\\\\\\\\\\\\\\\\\
 */
 
 a {
@@ -118,6 +118,8 @@ article{
 #aboutDark{
     color: #fff;
     background-color: #1c1b17;
+    padding-bottom: 150px;
+    margin-bottom: -150px;
 }
 
 #aboutDark p{
