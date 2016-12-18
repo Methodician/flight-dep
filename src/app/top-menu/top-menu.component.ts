@@ -1,5 +1,5 @@
 import { MediaQueryService } from './../shared/services/media-query.service';
-import {/* NgZone,*/ Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
+import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 
 @Component({
     selector: 'top-menu',

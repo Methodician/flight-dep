@@ -7,22 +7,39 @@ body {
 
 
 
-
-.carusel-caption {
+/* //// CAROUSEL STUFF THAT CAN'T BE DONE IN COMPONENT \\\\ */
+.carousel-caption {
     background-color: black;
+    position: initial;
+    height: 100px;
 }
-.carusel-caption h4, 
-.carusel-caption p {
+.carousel-caption h4, 
+.carousel-caption p {
     color: wheat;
     text-align: center;
 }
-.carusel-caption h4 {
+.carousel-caption h4 {
     margin-bottom: 15px;
 }
-/*.carousel-indicators li {
-    
-}*/
 
+.carousel-control {
+    height: 100px;
+    top: initial;
+}
+
+.carousel-control span {
+    top: calc(50% - 19px) !important;
+    color: wheat;
+    font-size: 50px !important;
+}
+
+.carousel-indicators li {
+    border: 1px solid wheat;
+}
+
+.carousel-indicators .active {
+    background-color: wheat;
+}
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
 

@@ -7,63 +7,63 @@
     <carousel [interval]="6000" [noWrap]="false">
       <slide class="carousel-slide" *ngFor="let slide of cwHomeSlides; let index=index" [active]="slide.active">
         <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-        <div class="carusel-caption">
-          <h4>{{ slide.text }}</h4>
-          <p>{{ index + 1 }}</p>
-        </div>
-      </slide>
-    </carousel>
-  </div>
-  <p>Clean customer process forms:</p>
-  <div class="carousel-wrapper">
-    <carousel [interval]="6000" [noWrap]="false">
-      <slide class="carousel-slide" *ngFor="let slide of cwLockSlides; let index=index" [active]="slide.active">
-        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-        <div class="carusel-caption">
-          <h4>{{ slide.text }}</h4>
-          <p>{{ index + 1 }}</p>
-        </div>
-      </slide>
-    </carousel>
-  </div>
-  <p>Detail forms:</p>
-  <div class="carousel-wrapper">
-    <carousel [interval]="6000" [noWrap]="false">
-      <slide class="carousel-slide" *ngFor="let slide of cwDetailSlides; let index=index" [active]="slide.active">
-        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-        <div class="carusel-caption">
-          <h4>{{ slide.text }}</h4>
-          <p>{{ index + 1 }}</p>
-        </div>
-      </slide>
-    </carousel>
-  </div>
-  <p>Data maintenance forms:</p>
-  <div class="carousel-wrapper">
-    <carousel [interval]="6000" [noWrap]="false">
-      <slide class="carousel-slide" *ngFor="let slide of cwMaintenanceSlides; let index=index" [active]="slide.active">
-        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-        <div class="carusel-caption">
-          <h4>{{ slide.text }}</h4>
-          <p>{{ index + 1 }}</p>
-        </div>
-      </slide>
-    </carousel>
-  </div>
-  <br>
-  <br>
-  <h3>Oil Camp attendent app</h3>
-  <div class="carousel-wrapper">
-    <carousel [interval]="6000" [noWrap]="false">
-      <slide class="carousel-slide" *ngFor="let slide of gssSlides; let index=index" [active]="slide.active">
-        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-        <div class="carusel-caption">
-          <h4>{{ slide.text }}</h4>
-          <p>{{ index + 1 }}</p>
-        </div>
-      </slide>
-    </carousel>
-  </div>
-  <h3>Play with our color mixer </h3>
-  <h4>it's fun, but can be useful</h4>
+<div class="carousel-caption">
+  <h4>{{ slide.text }}</h4>
+  <!--<p>{{ index + 1 }}</p>-->
+</div>
+</slide>
+</carousel>
+</div>
+<p>Clean customer process forms:</p>
+<div class="carousel-wrapper">
+  <carousel [interval]="6000" [noWrap]="false">
+    <slide class="carousel-slide" *ngFor="let slide of cwLockSlides; let index=index" [active]="slide.active">
+      <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+<div class="carousel-caption">
+  <h4>{{ slide.text }}</h4>
+  <!-- <p>{{ index + 1 }}</p>-->
+</div>
+</slide>
+</carousel>
+</div>
+<p>Detail forms:</p>
+<div class="carousel-wrapper">
+  <carousel [interval]="6000" [noWrap]="false">
+    <slide class="carousel-slide" *ngFor="let slide of cwDetailSlides; let index=index" [active]="slide.active">
+      <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+<div class="carousel-caption">
+  <h4>{{ slide.text }}</h4>
+  <!--<p>{{ index + 1 }}</p>-->
+</div>
+</slide>
+</carousel>
+</div>
+<p>Data maintenance forms:</p>
+<div class="carousel-wrapper">
+  <carousel [interval]="6000" [noWrap]="false">
+    <slide class="carousel-slide" *ngFor="let slide of cwMaintenanceSlides; let index=index" [active]="slide.active">
+      <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+<div class="carousel-caption">
+  <h4>{{ slide.text }}</h4>
+  <!--<p>{{ index + 1 }}</p>-->
+</div>
+</slide>
+</carousel>
+</div>
+<br>
+<br>
+<h3>Oil Camp attendent app</h3>
+<div class="carousel-wrapper">
+  <carousel [interval]="6000" [noWrap]="false">
+    <slide class="carousel-slide" *ngFor="let slide of gssSlides; let index=index" [active]="slide.active">
+      <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
+<div class="carousel-caption">
+  <h4>{{ slide.text }}</h4>
+  <!--<p>{{ index + 1 }}</p>-->
+</div>
+</slide>
+</carousel>
+</div>
+<h3>Play with our color mixer </h3>
+<h4>it's fun, but can be useful</h4>
 </div>
