@@ -1,3 +1,4 @@
+import { MediaQueryService } from './shared/services/media-query.service';
 import { ContactService } from './contact/contact.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
@@ -65,7 +66,10 @@ export const firebaseConfig = {
     ReactiveFormsModule,
     CarouselModule
   ],
-  providers: [ContactService],
+  providers: [
+    ContactService,
+    MediaQueryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

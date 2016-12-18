@@ -1,4 +1,5 @@
-import { NgZone, Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
+import { MediaQueryService } from './../shared/services/media-query.service';
+import {/* NgZone,*/ Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 
 @Component({
     selector: 'top-menu',
@@ -52,31 +53,35 @@ import { NgZone, Component, OnInit, trigger, state, style, transition, animate }
 export class TopMenuComponent implements OnInit {
 
     public isCollapsed: boolean = true;
-    phonesPortrait = true;
+    /*phonesPortrait = true;
     phonesLandscape = false;
     bigPhoneLandscape = false;
     iPadPortrait = false;
     iPadLandscape = false;
-    desktop = false;
+    desktop = false;*/
 
-    constructor(ngZone: NgZone) {
+    /*constructor(ngZone: NgZone) {
         window.onresize = (event) => {
             ngZone.run(() => {
                 this.setMediaQueries();
             });
         };
+    }*/
+
+    constructor(private qrySvc: MediaQueryService){
+
     }
 
     ngOnInit() {
-        this.setMediaQueries();
+        /*this.setMediaQueries();*/
     }
 
     showNavBar() {
-        if (this.desktop || this.iPadLandscape || this.iPadPortrait)
+        if (this.qrySvc.desktop || this.qrySvc.iPadLandscape || this.qrySvc.iPadPortrait)
             return true;
         else return false;
     }
-    setMediaQueries() {
+/*    setMediaQueries() {
         this.mediaQueriesFalse();
 
         if (window.matchMedia('(min-width : 1200px)').matches) {
@@ -100,15 +105,15 @@ export class TopMenuComponent implements OnInit {
             return;
         }
         this.phonesPortrait = true;
-    }
-    mediaQueriesFalse() {
+    }*/
+/*    mediaQueriesFalse() {
         this.phonesPortrait = false;
         this.phonesLandscape = false;
         this.bigPhoneLandscape = false;
         this.iPadPortrait = false;
         this.iPadLandscape = false;
         this.desktop = false;
-    }
+    }*/
 
 
 }

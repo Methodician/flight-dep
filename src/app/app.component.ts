@@ -1,3 +1,4 @@
+import { MediaQueryService } from './shared/services/media-query.service';
 import { routerTransition } from './shared/animations/router.animations';
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
@@ -10,5 +11,13 @@ import { AngularFire, FirebaseListObservable, FirebaseObjectObservable } from 'a
   animations: [routerTransition()]
 })
 export class AppComponent {
+  constructor(private qrySvc: MediaQueryService) {
+  }
+
+  topMargin() {
+    if (this.qrySvc.desktop || this.qrySvc.iPadPortrait || this.qrySvc.iPadLandscape)
+      return 50;
+    else return 0;
+  }
 
 }
