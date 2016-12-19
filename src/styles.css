@@ -9,13 +9,13 @@ body {
 
 /* //// CAROUSEL STUFF THAT CAN'T BE DONE IN COMPONENT \\\\ */
 .carousel-caption {
-    background-color: black;
+    background-color: #C8FFFF;
     position: initial;
     height: 100px;
 }
 .carousel-caption h4, 
 .carousel-caption p {
-    color: wheat;
+    color: #A8009E;
     text-align: center;
 }
 .carousel-caption h4 {
@@ -29,16 +29,16 @@ body {
 
 .carousel-control span {
     top: calc(50% - 19px) !important;
-    color: wheat;
+    color: #543E80;
     font-size: 50px !important;
 }
 
 .carousel-indicators li {
-    border: 1px solid wheat;
+    border: 1px solid #543E80;
 }
 
 .carousel-indicators .active {
-    background-color: wheat;
+    background-color: #543E80;
 }
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){

@@ -23,11 +23,11 @@ export class AppsComponent implements OnInit {
   }
 
   addCwSlides() {
-    this.cwHomeSlides.push({
+    /*this.cwHomeSlides.push({
       image: '../../assets/images/ODA/cw_menu_open.png',
       text: 'menu open',
       alt: 'community warehouse example with open menu'
-    });
+    });*/
     this.cwHomeSlides.push({
       image: '../../assets/images/ODA/cw_menu_collapsed.png',
       text: 'menu collapsed',
@@ -75,7 +75,7 @@ export class AppsComponent implements OnInit {
     });
     this.cwMaintenanceSlides.push({
       image: '../../assets/images/ODA/cw_agencies.png',
-      text: 'case managers',
+      text: 'agencies',
       alt: 'community warehouse example case managers'
     });
     this.cwMaintenanceSlides.push({
@@ -99,9 +99,9 @@ export class AppsComponent implements OnInit {
       alt: 'oil camps attendent app filters closed'
     })
     this.gssSlides.push({
-      image: '../../assets/images/ODA/gss_notes_modal.png',
-      text: 'notes modal',
-      alt: 'oil camps attendent app notes modal'
+      image: '../../assets/images/ODA/gss_tasks_overview.png',
+      text: 'tasks overview',
+      alt: 'oil camps attendent app tasks overview'
     })
     this.gssSlides.push({
       image: '../../assets/images/ODA/gss_tasks_modal.png',
@@ -109,9 +109,9 @@ export class AppsComponent implements OnInit {
       alt: 'oil camps attendent app tasks modal'
     })
     this.gssSlides.push({
-      image: '../../assets/images/ODA/gss_tasks_overview.png',
-      text: 'tasks overview',
-      alt: 'oil camps attendent app tasks overview'
+      image: '../../assets/images/ODA/gss_notes_modal.png',
+      text: 'notes modal',
+      alt: 'oil camps attendent app notes modal'
     })
   }
 
