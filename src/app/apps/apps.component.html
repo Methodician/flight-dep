@@ -1,10 +1,9 @@
-<div class="apps-wrapper">
-  <div class="jumbotron">
-    <h2>Check out these tools</h2>
-    <p>they saved time and made life better for clients</p>
-  </div>
+<div class="page-container" id="apps-container">
 
-  <div class="header main-header">
+  <h1 class="page-header">APPS and TOOLS</h1>
+  <p>Some apps and tools that saved time and made life better for clients</p>
+
+  <div class="app-header">
     <h3>Community Warehouse app</h3>
     <p>Filter functionality examples:</p>
   </div>
@@ -12,72 +11,73 @@
   <div class="carousel-wrapper">
     <carousel [interval]="6000" [noWrap]="false">
       <slide class="carousel-slide" *ngFor="let slide of cwHomeSlides; let index=index" [active]="slide.active">
-        <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-<div class="carousel-caption">
-  <h4>{{ slide.text }}</h4>
-  <!--<p>{{ index + 1 }}</p>-->
+        <img [src]="slide.image" [alt]="slide.alt">
+        <div class="carousel-caption">
+          <h4>{{ slide.text }}</h4>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="header sub-header">
+    <p>Clean customer process forms:</p>
+  </div>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of cwLockSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" [alt]="slide.alt">
+        <div class="carousel-caption">
+          <h4>{{ slide.text }}</h4>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="header sub-header">
+    <p>Detail forms:</p>
+  </div>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of cwDetailSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" [alt]="slide.alt">
+        <div class="carousel-caption">
+          <h4>{{ slide.text }}</h4>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="header sub-header">
+    <p>Data maintenance forms:</p>
+  </div>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of cwMaintenanceSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" [alt]="slide.alt">
+        <div class="carousel-caption">
+          <h4>{{ slide.text }}</h4>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <br>
+  <br>
+  <div class="app-header">
+    <h3>Oil Camp attendent app</h3>
+    <p>A simple tool for housekeeping to keep track. Similar could be adapted for a hotel...</p>
+  </div>
+  <div class="carousel-wrapper">
+    <carousel [interval]="6000" [noWrap]="false">
+      <slide class="carousel-slide" *ngFor="let slide of gssSlides; let index=index" [active]="slide.active">
+        <img [src]="slide.image" [alt]="slide.alt">
+        <div class="carousel-caption">
+          <h4>{{ slide.text }}</h4>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="app-header">
+    <h3>Play with our color mixer </h3>
+    <p>it's fun, but can be useful...</p>
+  </div>
+
 </div>
-</slide>
-</carousel>
-</div>
-<div class="header sub-header">
-  <p>Clean customer process forms:</p>
-</div>
-<div class="carousel-wrapper">
-  <carousel [interval]="6000" [noWrap]="false">
-    <slide class="carousel-slide" *ngFor="let slide of cwLockSlides; let index=index" [active]="slide.active">
-      <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-<div class="carousel-caption">
-  <h4>{{ slide.text }}</h4>
-  <!-- <p>{{ index + 1 }}</p>-->
-</div>
-</slide>
-</carousel>
-</div>
-<div class="header sub-header">
-  <p>Detail forms:</p>
-</div>
-<div class="carousel-wrapper">
-  <carousel [interval]="6000" [noWrap]="false">
-    <slide class="carousel-slide" *ngFor="let slide of cwDetailSlides; let index=index" [active]="slide.active">
-      <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-<div class="carousel-caption">
-  <h4>{{ slide.text }}</h4>
-  <!--<p>{{ index + 1 }}</p>-->
-</div>
-</slide>
-</carousel>
-</div>
-<div class="header sub-header">
-  <p>Data maintenance forms:</p>
-</div>
-<div class="carousel-wrapper">
-  <carousel [interval]="6000" [noWrap]="false">
-    <slide class="carousel-slide" *ngFor="let slide of cwMaintenanceSlides; let index=index" [active]="slide.active">
-      <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-<div class="carousel-caption">
-  <h4>{{ slide.text }}</h4>
-  <!--<p>{{ index + 1 }}</p>-->
-</div>
-</slide>
-</carousel>
-</div>
-<br>
-<br>
-<div class="header main-header">
-  <h3>Oil Camp attendent app</h3>
-</div>
-<div class="carousel-wrapper">
-  <carousel [interval]="6000" [noWrap]="false">
-    <slide class="carousel-slide" *ngFor="let slide of gssSlides; let index=index" [active]="slide.active">
-      <img [src]="slide.image" style="margin: auto;" [alt]="slide.alt">
-<div class="carousel-caption">
-  <h4>{{ slide.text }}</h4>
-  <!--<p>{{ index + 1 }}</p>-->
-</div>
-</slide>
-</carousel>
-</div>
-<h3>Play with our color mixer </h3>
-<h4>it's fun, but can be useful</h4>
-</div>
+
+<app-footer></app-footer>

@@ -19,7 +19,8 @@ import { AppsComponent } from './apps/apps.component';
 
 const Routes: Routes = [
   { path: 'home', component: HomeComponent },
-  {
+  { path: 'apps', component: AppsComponent },
+  /*{
     path: 'work',
     children: [
       {
@@ -31,7 +32,7 @@ const Routes: Routes = [
         component: AppsComponent
       }
     ]
-  },
+  },*/
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', component: HomeComponent }
