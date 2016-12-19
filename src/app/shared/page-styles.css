@@ -1,9 +1,12 @@
-
-p, h3 {
-    text-align: left;
-}
+/*
+//////////////// FOR CONTACT COMPONENT \\\\\\\\\\\\\\\\\\
+*/
 .contacttext {
     text-align: center;
+}
+legend {
+    border-bottom: 0px solid #e5e5e5;
+    margin-bottom: 7px;
 }
 
 .input-container {
@@ -65,8 +68,11 @@ form.ng-touched.ng-invalid {
 }
 
 /*
-//////////////// FOR ABOUT.COMPONENT.CSS \\\\\\\\\\\\\\\\\\
+//////////////// FOR ABOUT COMPONENT \\\\\\\\\\\\\\\\\\
 */
+p, h3 {
+    text-align: left;
+}
 
 a {
     color: #337ab7;
@@ -117,8 +123,9 @@ section{
     /*text-align: left;*/
 }
 
-/* ////// FOR APPS COMPONENT \\\\\\\ */
-
+/* 
+//////////////// FOR APPS COMPONENT \\\\\\\\\\\\\\\\\\ 
+*/
 #apps-container {
     margin: 0 10px;
 }
@@ -150,7 +157,6 @@ section{
     margin-bottom: 0;
 }
 
-
 /*.header {
     text-align: center;
     color: #fff;
@@ -168,7 +174,10 @@ section{
 }*/
 
 
-/*////  RESPONSIVE \\\\*/
+/* 
+//////////////// RESPONSIVE \\\\\\\\\\\\\\\\\\ 
+*/
+
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
     section {
@@ -267,6 +276,13 @@ section{
     }
 }
 
+/*iPad Pro portrait*/
+@media screen and (min-width: 1020px) and (min-height: 1360px){
+    #contact-container {
+        margin-bottom: 421px;
+    }
+}
+
 /*Desktop view*/
 @media screen and (min-width : 1200px) {
     #about-dark {
@@ -274,7 +290,7 @@ section{
         padding-right: 50px;
     }
 
-    .row {
+    #about-dark .row {
         margin-top: 150px;
     }
 
