@@ -160,6 +160,7 @@ section{
 
     #aboutDark {
         margin: 0px;
+        margin-bottom: -200px;
     }
 
     .about-container {
@@ -223,6 +224,15 @@ section{
         font-size: 4em;
     }
 
+    #aboutDark {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #aboutDark p{
+        font-size: 1.2em;
+    }
+
     .about-container {
         margin: 0px 200px;
     }
@@ -230,6 +240,19 @@ section{
 
 /*Desktop view*/
 @media screen and (min-width : 1200px) {
+    #aboutDark {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .row {
+        margin-top: 150px;
+    }
+
+    section {
+        margin: 60px;
+    }
+
     .about-container {
         margin: 0px 350px;
     }
