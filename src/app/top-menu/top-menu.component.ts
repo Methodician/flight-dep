@@ -55,7 +55,7 @@ export class TopMenuComponent implements OnInit {
     public isCollapsed: boolean = true;
     private navList = [
         { link: 'home', text: 'WORK' },
-        { link: 'work/apps', text: 'APPS-TOOLS' },
+        { link: 'work/apps', text: 'APPS.TOOLS' },
         { link: 'about', text: 'ABOUT' },
         { link: 'contact', text: 'CONTACT' }
     ];

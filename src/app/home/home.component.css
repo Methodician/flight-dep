@@ -29,7 +29,7 @@ section{
     color: #fff;
     margin: -15px 0px 0px;
     border-radius: 0 0 10px 10px;
-    border-bottom: 6px solid #999;
+    /*border-bottom: 6px solid #999;*/
 }
 .jumbotron h1, p {
     margin: -5px;
@@ -199,8 +199,12 @@ hr {
 
     .jumbotron {
         padding: 20vh 3vw 4.5vh;
+        margin-top: -60px;
         border-radius: 0 0 26px 26px;
-        border-bottom: 13px solid #999;
+        /*border-bottom: 13px solid #999;*/
+        -webkit-box-shadow: 0px 15px 20px -6px #adadad;
+        -moz-box-shadow: 0px 15px 20px -6px #adadad;
+        box-shadow: 0px 15px 20px -6px #adadad;
     }
 
     .jumbotron p {
