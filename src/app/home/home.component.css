@@ -139,13 +139,7 @@ hr {
 
 
 /*most phones landscape mode*/
-@media screen and (min-width : 500px){
-    #hero {
-        /*padding: 20px;*/
-        background-position-y: 90%;
-        background-size: 50%;
-    }
-    
+@media screen and (min-width : 500px){    
     #heroImg {
         width: 50%;
     }
@@ -179,10 +173,6 @@ hr {
 
 /*Nexus 6P and iPhone6 Plus landscape*/
 @media screen and (min-width : 732px) {
-    #hero {
-        /*padding: 30px;*/
-    }
-
     #heroImg {
         width: 53%;
     }
@@ -198,24 +188,35 @@ hr {
 
 /*iPad portrait mode*/
 @media screen and (min-width : 760px){
-    h2{
-        font-size: 3.5em;
+    .container {
+        width: initial;
     }
-
+    
     #homeHeading {
-        margin-top: 15vh;
-        font-size: 3em;
+        font-size: 4.8em;
+        margin: -13px;
     }
 
-    #hero {
-        font-size: 2em;
-        background-position-y: 70%;
-        background-size: 80%;
+    .jumbotron {
+        padding: 20vh 3vw 4.5vh;
+        border-radius: 0 0 26px 26px;
+        border-bottom: 13px solid #999;
+    }
+
+    .jumbotron p {
+        font-size: 1.8em;
     }
 
     #heroImg {
-        width: 90%;
-        margin-top: 0px;
+        width: 80%;
+        margin-top: 20px;
+    }
+    #jumbo-container {
+        padding: 0 5vw;
+    }
+
+    h2{
+        font-size: 3.5em;
     }
 
     #icons {
@@ -227,7 +228,6 @@ hr {
 @media screen and (min-width : 1020px){
     #homeHeading {
         margin-top: 10vh;
-        font-size: 3.5em;
     }
 
     #hero {
