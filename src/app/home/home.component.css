@@ -141,60 +141,54 @@ hr {
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
     #hero {
-        padding: 20px;
+        /*padding: 20px;*/
         background-position-y: 90%;
         background-size: 50%;
     }
-
-    #homeHeading {
-        margin-top: -13vh;
-    }
     
     #heroImg {
-        width: 60%;
-        margin-top: -10px;
+        width: 50%;
+    }
+
+    .jumbotron {
+        padding: 8vh 3vw 4.5vh;
     }
 
     .section-header{
-        padding-top: 50px;
+        padding-top: 25px;
+    }
+
+    #graphics, 
+    #sites, 
+    #apps {
+        padding: 40px 0 50px;
     }
     
     .laptop-example{
-        margin-top: -105px;
+        margin-top: -85px;
     }
 
     #icons {
         padding: 25px 80px;
-        margin-bottom: 65px;
     }
 
     .tablet-example, .mobile-example {
-        margin-top: -75px;
+        margin-top: -80px;
     }
 }
 
 /*Nexus 6P and iPhone6 Plus landscape*/
 @media screen and (min-width : 732px) {
     #hero {
-        padding: 30px;
-    }
-    
-    #homeHeading {
-        margin-top: -11vh;
+        /*padding: 30px;*/
     }
 
     #heroImg {
-        width: 65%;
-        padding: 10px;
-        margin-top: -20px;
-    }
-
-    .section-header{
-        padding-top: 70px;
+        width: 53%;
     }
 
     .laptop-example{
-        margin-top: -135px;
+        margin-top: -105px;
     }
 
     .tablet-example, .mobile-example {
