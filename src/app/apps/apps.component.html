@@ -1,8 +1,14 @@
 <div class="apps-wrapper">
-  <h2>Check out these tools</h2>
-  <p>they saved time and made life better for clients</p>
-  <h3>Community Warehouse app</h3>
-  <p>Filter functionality examples:</p>
+  <div class="jumbotron">
+    <h2>Check out these tools</h2>
+    <p>they saved time and made life better for clients</p>
+  </div>
+
+  <div class="header main-header">
+    <h3>Community Warehouse app</h3>
+    <p>Filter functionality examples:</p>
+  </div>
+
   <div class="carousel-wrapper">
     <carousel [interval]="6000" [noWrap]="false">
       <slide class="carousel-slide" *ngFor="let slide of cwHomeSlides; let index=index" [active]="slide.active">
@@ -14,7 +20,9 @@
 </slide>
 </carousel>
 </div>
-<p>Clean customer process forms:</p>
+<div class="header sub-header">
+  <p>Clean customer process forms:</p>
+</div>
 <div class="carousel-wrapper">
   <carousel [interval]="6000" [noWrap]="false">
     <slide class="carousel-slide" *ngFor="let slide of cwLockSlides; let index=index" [active]="slide.active">
@@ -26,7 +34,9 @@
 </slide>
 </carousel>
 </div>
-<p>Detail forms:</p>
+<div class="header sub-header">
+  <p>Detail forms:</p>
+</div>
 <div class="carousel-wrapper">
   <carousel [interval]="6000" [noWrap]="false">
     <slide class="carousel-slide" *ngFor="let slide of cwDetailSlides; let index=index" [active]="slide.active">
@@ -38,7 +48,9 @@
 </slide>
 </carousel>
 </div>
-<p>Data maintenance forms:</p>
+<div class="header sub-header">
+  <p>Data maintenance forms:</p>
+</div>
 <div class="carousel-wrapper">
   <carousel [interval]="6000" [noWrap]="false">
     <slide class="carousel-slide" *ngFor="let slide of cwMaintenanceSlides; let index=index" [active]="slide.active">
@@ -52,7 +64,9 @@
 </div>
 <br>
 <br>
-<h3>Oil Camp attendent app</h3>
+<div class="header main-header">
+  <h3>Oil Camp attendent app</h3>
+</div>
 <div class="carousel-wrapper">
   <carousel [interval]="6000" [noWrap]="false">
     <slide class="carousel-slide" *ngFor="let slide of gssSlides; let index=index" [active]="slide.active">
