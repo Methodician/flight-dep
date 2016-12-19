@@ -1,5 +1,5 @@
-<div class="about-container">
-  <h1 class="pageHeader">CONTACT</h1>
+<div class="page-container">
+  <h1 class="page-header">CONTACT</h1>
   <p class="contacttext">
     info.flight.run@gmail.com | Portland, OR
   </p>
@@ -37,7 +37,7 @@
     </fieldset>
   </form>
   <!--<p>( * denotes required field )</p>-->
-  <button [disabled]="!form.valid" class="btn btn-success" (click)="submit()">SEND MESSAGE</button>
+  <button [disabled]="!form.valid" id="submit-contact" class="btn" (click)="submit()">SEND MESSAGE</button>
 
 </div>
 

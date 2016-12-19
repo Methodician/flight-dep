@@ -4,7 +4,7 @@ import { routerTransition } from '../shared/animations/router.animations';
 @Component({
   selector: 'app-apps',
   templateUrl: './apps.component.html',
-  styleUrls: ['./apps.component.css'],
+  styleUrls: ['../shared/page-styles.css'],
   animations: [routerTransition()],
   host: { '[@routerTransition]': '' }
 })
