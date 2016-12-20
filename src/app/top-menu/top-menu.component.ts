@@ -56,7 +56,7 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
             state('false', style({ transform: 'rotate(25deg) translateX(7px) translateY(-1px)', width: '20px', height: '3px' })),*/
 
             state('true', style({ transform: '*' })),
-            state('false', style({ transform: 'rotate(45deg) translateY(100%) translateX(15%)', width: '41.5px' })),
+            state('false', style({ transform: 'rotate(45deg) translateY(100%) translateX(15%)', width: '27px' })),
 
             /*transition('1 <=> 0', [animate('170ms')])*/
             // for dev:
@@ -64,7 +64,7 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
         ]),
         trigger('middleBarXed', [
             state('true', style({ width: '*' })),
-            state('false', style({ width: '41.5px', height: '0px', opacity: '0' })),
+            state('false', style({ width: '27px', height: '0px', opacity: '0' })),
             /*transition('1 <=> 0', [animate('170ms')])*/
             // for dev:
             transition('1 <=> 0', [animate('250ms')])
@@ -74,7 +74,7 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
             state('false', style({ transform: 'rotate(-25deg) translateX(7px) translateY(1px)', width: '20px', height: '3px' })),*/
 
             state('true', style({ transform: '*' })),
-            state('false', style({ transform: 'rotate(-45deg) translateY(-100%) translateX(15%)', width: '41.5px' })),
+            state('false', style({ transform: 'rotate(-45deg) translateY(-100%) translateX(15%)', width: '27px' })),
 
             /*transition('1 <=> 0', [animate('170ms')])*/
             // for dev:

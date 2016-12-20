@@ -124,13 +124,13 @@ img {
     }
 
     .icon-bar {
-        width: 11px;
-        height: 8px;
-        border-radius: 2.5px;
+        width: 8px;
+        height: 6px;
+        border-radius: 1.5px;
     }
 
     .toggle-button .icon-bar + .icon-bar {
-        margin-top: 11px;
+        margin-top: 7.5px;
     }
 
     a {
