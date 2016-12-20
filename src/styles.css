@@ -11,7 +11,7 @@ body {
 .carousel-caption {
     background-color: #C8FFFF;
     position: initial;
-    height: 100px;
+    height: 40px;
 }
 .carousel-caption h4, 
 .carousel-caption p {
@@ -23,7 +23,7 @@ body {
 }
 
 .carousel-control {
-    height: 100px;
+    height: 40px;
     top: initial;
 }
 
@@ -47,6 +47,22 @@ body {
 
 /*iPad portrait mode*/
 @media screen and (min-width: 760px){
+    .carousel-caption,
+    .carousel-control {
+        height: 65px;
+    }
+
+    .carousel-indicators li {
+        margin: 0 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+    .carousel-indicators .active {
+        margin: 0 10px;
+        height: 15px;
+        width: 15px;
+    }
 
 }
 
@@ -54,5 +70,17 @@ body {
 @media screen and (min-width: 1020px){
 
 
+}
+
+/*Desktop view +*/
+@media screen and (min-width : 1200px) {
+    .carousel-caption,
+    .carousel-control {
+        height: 100px;
+    }
+
+    .carousel-indicators {
+        bottom: 10px;
+    }
 }
 

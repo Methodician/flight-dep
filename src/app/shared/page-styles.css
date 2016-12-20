@@ -178,7 +178,7 @@ section{
 //////////////// RESPONSIVE \\\\\\\\\\\\\\\\\\ 
 */
 
-/*most phones landscape mode*/
+/*most phones landscape mode +*/
 @media screen and (min-width : 500px){
     section {
         margin: 60px;
@@ -198,7 +198,13 @@ section{
     }
 }
 
-/*iPad portrait mode*/
+/*iPad portrait mode -*/
+@media screen and (max-width: 760px) {
+    .carousel-wrapper h4 {
+        font-size: 15px;
+    }
+}
+/*iPad portrait mode +*/
 @media screen and (min-width: 760px){
 
     #apps-container {
@@ -206,6 +212,9 @@ section{
     }
     .carousel-wrapper {
         width: calc(100vw - 150px);
+    }
+    .carousel-wrapper h4 {
+        margin-top: 15px;
     }
 
     .page-header {
@@ -247,7 +256,7 @@ section{
     }
 }
 
-/*iPad landscape mode*/
+/*iPad landscape mode +*/
 @media screen and (min-width: 1020px){
     section {
         margin: 150px;
@@ -276,14 +285,16 @@ section{
     }
 }
 
-/*iPad Pro portrait*/
+/*iPad Pro portrait +*/
 @media screen and (min-width: 1020px) and (min-height: 1360px){
     #contact-container {
         margin-bottom: 421px;
     }
+
+    
 }
 
-/*Desktop view*/
+/*Desktop view +*/
 @media screen and (min-width : 1200px) {
     #about-dark {
         padding-left: 50px;
@@ -310,4 +321,16 @@ section{
     /*textarea {
         height: 30vh;
     }*/
+
+    #apps-container {
+        margin: 0 120px;
+    }
+
+    .carousel-wrapper {
+        width: calc(100vw - 285px);
+    }
+    .carousel-wrapper h4 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
 }
