@@ -189,18 +189,18 @@ img{
 @media screen and (min-width : 500px){
     section {
         margin: 60px;
+        margin-top: 0;
+    }
+
+    hr {
+        margin: 0 100px 10px;
     }
 
     img {
-        margin-top: -40px;
+        margin-top: 30px;
     }
 
-    #about-dark {
-        margin: 0px;
-        margin-bottom: -200px;
-    }
-
-    .page-container {
+    #contact-container {
         margin: 0px 100px;
     }
 }
@@ -214,11 +214,11 @@ img{
 /*iPad portrait mode +*/
 @media screen and (min-width: 760px){
 
-    #apps-container {
+    /*#apps-container {
         margin: 0 50px;
-    }
+    }*/
     .carousel-wrapper {
-        width: calc(100vw - 150px);
+        /*width: calc(100vw - 150px);*/
     }
     .carousel-wrapper h4 {
         margin-top: 15px;
@@ -230,10 +230,15 @@ img{
 
     section {
         margin: 100px;
+        margin-top: 0;
+    }
+
+    hr {
+        margin: 0 130px 10px;
     }
 
     img {
-        margin-top: -65px;
+        /*margin-top: -65px;*/
         /*padding: 0 100px 0 0;*/
     }
 
@@ -249,8 +254,9 @@ img{
         font-size: 1.6em;
     }
 
-    .page-container {
+    #contact-container {
         margin: 0px 120px;
+        margin-bottom: 208px;
     }
 
     .form-control, 
@@ -267,27 +273,23 @@ img{
 @media screen and (min-width: 1020px){
     section {
         margin: 150px;
-    }
-
-    img {
-        margin-top: -115px;
-        /*padding: 0 100px 0 0;*/
+        margin-top: 0;
     }
 
     h1 {
         font-size: 4em;
     }
 
-    #about-dark {
+    .darktheme {
         padding-left: 50px;
         padding-right: 50px;
     }
 
-    #about-dark p{
+    .darktheme p{
         font-size: 1.2em;
     }
 
-    .page-container {
+    #contact-container {
         margin: 0px 200px;
     }
 }
@@ -295,15 +297,13 @@ img{
 /*iPad Pro portrait +*/
 @media screen and (min-width: 1020px) and (min-height: 1360px){
     #contact-container {
-        margin-bottom: 421px;
-    }
-
-    
+        margin-bottom: 431px;
+    } 
 }
 
 /*Desktop view +*/
 @media screen and (min-width : 1200px) {
-    #about-dark {
+    .darktheme {
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -312,11 +312,16 @@ img{
         margin-top: 150px;
     }
 
-    section {
-        margin: 60px;
+    hr {
+        margin: 0 200px 10px;
     }
 
-    .page-container {
+    section {
+        margin: 60px;
+        margin-top: 0;
+    }
+
+    #contact-container {
         margin: 0px 350px;
     }
 
@@ -329,9 +334,9 @@ img{
         height: 30vh;
     }*/
 
-    #apps-container {
-        margin: 0 120px;
-    }
+    /*#apps-container {
+        padding: 200px;
+    }*/
 
     .carousel-wrapper {
         width: calc(100vw - 285px);
