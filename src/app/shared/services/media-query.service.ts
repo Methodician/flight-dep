@@ -23,6 +23,20 @@ export class MediaQueryService {
 
   }
 
+  currentMinWidthMedia(){
+    if(this.phonesPortrait)
+      return 'phonesPortrait';
+    if(this.phonesLandscape)
+      return 'phonesLandscape';
+    if(this.bigPhoneLandscape)
+      return 'bigPhoneLandscape';
+    if(this.iPadPortrait)
+      return 'iPadPortrait';
+    if(this.iPadLandscape)
+      return 'iPadLandscape';
+    return 'desktop';
+  }
+
   setMediaQueries() {
     this.mediaQueriesFalse();
 

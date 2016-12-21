@@ -1,3 +1,4 @@
+import { MediaQueryService } from './../shared/services/media-query.service';
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../shared/animations/router.animations';
 
@@ -10,16 +11,21 @@ import { routerTransition } from '../shared/animations/router.animations';
 })
 export class AppsComponent implements OnInit {
 
+
   private cwHomeSlides: Array<any> = [];
   private cwLockSlides: Array<any> = [];
   private cwDetailSlides: Array<any> = [];
   private cwMaintenanceSlides: Array<any> = [];
   private gssSlides: Array<any> = [];
 
-  constructor() { }
+  constructor(private querySvc: MediaQueryService) { }
 
   ngOnInit() {
     this.addCwSlides();
+  }
+
+  currentMedia() {
+    return this.querySvc.currentMinWidthMedia();
   }
 
   addCwSlides() {

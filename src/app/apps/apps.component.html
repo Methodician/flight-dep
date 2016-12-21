@@ -39,7 +39,7 @@
         </carousel>
       </div>
     </div>
-    
+
     <div class="carouselset">
       <div class="header sub-header">
         <p>Detail forms:</p>
@@ -93,11 +93,15 @@
 
     <br>
 
-    <div class="app-header carouselset">
+    <div class="app-header">
       <h3>Color Mixer</h3>
       <p>Play with our <a href="https://csscolormixer.com/" target="_blank">color mixer</a> ! It's fun, but can be useful...</p>
       <a href="https://csscolormixer.com/" target="_blank">
-        <img id="cssCMapp_img" src="../../assets/images/cssCMapp_mobile2.png" alt="CSS Color Mixer mobile example">
+        <img *ngIf="currentMedia()=='phonesPortrait' || currentMedia()=='phonesLandscape' || currentMedia()=='iPadPortrait'" id="cssCMapp_img"
+          src="../../assets/images/cssCMapp_mobile2.png" alt="CSS Color Mixer mobile example">
+        <img *ngIf="currentMedia()=='bigPhoneLandscape' || currentMedia()=='iPadLandscape'" id="cssCMapp_img" src="../../assets/images/cssCM_tablet.png"
+          alt="CSS Color Mixer mobile example">
+        <img *ngIf="currentMedia()=='desktop'" id="cssCMapp_img" src="../../assets/images/cssCM_laptop.png" alt="CSS Color Mixer mobile example">
       </a>
     </div>
 
