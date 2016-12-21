@@ -231,7 +231,12 @@ hr {
 /*iPad landscape mode*/
 @media screen and (min-width : 1020px){
     #homeHeading {
-        margin-top: 10vh;
+        margin: -11px;
+        font-size: 2.5em;
+    }
+
+    .jumbotron p {
+        font-size: 1em;
     }
 
     #hero {
@@ -243,6 +248,7 @@ hr {
     #heroImg {
         width: 60%;
         padding: 0px;
+        margin-top: 13px;
     }
 
     #responsive{
@@ -277,8 +283,14 @@ hr {
 /*Desktop view*/
 @media screen and (min-width : 1200px) {
     #homeHeading {
-        margin-top: 0vh;
-        font-size: 3.5em;
+        margin: -16px;
+        font-size: 2.5em;
+    }
+
+    #heroImg {
+        width: 47%;
+        padding: 0px;
+        margin-top: 0px;
     }
 
     #hero {
