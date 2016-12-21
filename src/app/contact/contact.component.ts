@@ -41,9 +41,17 @@ export class ContactComponent implements OnInit {
       .then(
       () => {
         alert('Thank you for your interest!');
+        //this.notifyZapierOfContact();
         this.form.reset();
       }
       );
+  }
+
+  notifyZapierOfContact() {
+    this.contactSvc.notifyZapierOfContact(this.form.value)
+      .subscribe(res => {
+        console.log(res)
+      })
   }
 
 

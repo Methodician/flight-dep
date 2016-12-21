@@ -2,6 +2,7 @@ import { MediaQueryService } from './shared/services/media-query.service';
 import { ContactService } from './contact/contact.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from 'angularfire2'
@@ -65,7 +66,8 @@ export const firebaseConfig = {
     RouterModule.forRoot(Routes),
     AngularFireModule.initializeApp(firebaseConfig),
     ReactiveFormsModule,
-    CarouselModule
+    CarouselModule,
+    HttpModule
   ],
   providers: [
     ContactService,
