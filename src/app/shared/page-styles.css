@@ -334,12 +334,14 @@ img{
         height: 30vh;
     }*/
 
-    /*#apps-container {
-        padding: 200px;
-    }*/
+    #apps-container section {
+        margin: 200px;
+        margin-top: 0;
+    }
 
     .carousel-wrapper {
-        width: calc(100vw - 285px);
+        /*width: calc(100vw - 520px);*/
+        width: 100%;
     }
     .carousel-wrapper h4 {
         font-size: 22px;
