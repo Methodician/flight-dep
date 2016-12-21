@@ -9,14 +9,17 @@ body {
 
 /* //// CAROUSEL STUFF THAT CAN'T BE DONE IN COMPONENT \\\\ */
 .carousel-caption {
-    background-color: #C8FFFF;
+    background-color: #f3f3f3;
+    border-radius: 0 0 10px 10px;
     position: initial;
     height: 40px;
 }
 .carousel-caption h4, 
 .carousel-caption p {
-    color: #A8009E;
+    color: #636363;
+    font-weight: 200;
     text-align: center;
+    text-shadow: 0 0 0 rgba(0,0,0,.6);
 }
 .carousel-caption h4 {
     margin-bottom: 15px;
@@ -29,17 +32,29 @@ body {
 
 .carousel-control span {
     top: calc(50% - 19px) !important;
-    color: #543E80;
+    color: #444;
     font-size: 50px !important;
 }
 
+.carousel-indicators {
+    width: 56%;
+}
+
 .carousel-indicators li {
-    border: 1px solid #543E80;
+    border: 1.5px solid #b1b1b1;
+    margin-left: 12px;
 }
 
 .carousel-indicators .active {
-    background-color: #543E80;
+    border: 0px solid #b1b1b1;
+    background-color: #333;
+    margin-left: 12px;
 }
+
+/* 
+//////////////// RESPONSIVE \\\\\\\\\\\\\\\\\\ 
+*/
+
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){
 
