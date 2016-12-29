@@ -93,6 +93,9 @@ hr {
     background-color: white;
     border-radius: 50%
 }
+.no-overflow {
+    overflow: hidden;
+}
 .overview-image {
     height: 100%;
     width: 100%;
