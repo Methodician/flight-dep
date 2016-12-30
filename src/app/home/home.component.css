@@ -60,38 +60,45 @@ section{
 }
 hr {
     border-top: 3px dotted #8c8b8b;
-    margin: 5px 15px;
+    margin: 5px 15px 10px;
 }
 
 #overview {
     background-color: #333;
     padding-bottom: 10px;
     text-align: center;
-}
-#overview h3, h4, p {
+    margin: 0;
+    width: initial;
+}   
+#overview h1, h2, h3, h4, p {
     color: white;
+}
+#overview h3 {
+    margin-top: 0;
 }
 #overview p {
     margin: 5px 0;
-    height: 40px;
+}
+#awesome-p {
+    margin: 0;
 }
 .italic {
     font-style: italic;
 }
 .equidistant-container {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 .overview-item {
-    height: 140px;
-    width: 90px;
+    /*height: 250px;*/
+    width: 220px;
 }
 
 .overview-circle {
-    height: 90px;
-    width: 90px;
+    height: 220px;
+    width: 220px;
     background-color: white;
-    border-radius: 50%
+    border-radius: 50%;
+    margin: auto;
 }
 .no-overflow {
     overflow: hidden;
@@ -208,7 +215,7 @@ hr {
         margin-top: -80px;
     }
 
-    .equidistant-container {
+/*    .equidistant-container {
         padding: 0 45px;
     }
     .overview-item {
@@ -219,13 +226,22 @@ hr {
     .overview-circle {
         height: 110px;
         width: 110px;
-    }
+    }*/
 }
 
 /*Nexus 6P and iPhone6 Plus landscape*/
 @media screen and (min-width : 732px) {
     #heroImg {
         width: 53%;
+    }
+
+    .equidistant-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .overview-item {
+        height: initial;
     }
 
     .laptop-example{
@@ -274,7 +290,7 @@ hr {
         font-size: 3.5em;
     }
 
-    .equidistant-container {
+    /*.equidistant-container {
         padding: 0 65px;
     }
     .overview-item {
@@ -285,7 +301,7 @@ hr {
     .overview-circle {
         height: 130px;
         width: 130px;
-    }
+    }*/
 
     #icons {
         padding: 30px 0px;
@@ -318,7 +334,7 @@ hr {
     .equidistant-container {
         padding: 0 85px;
     }
-    .overview-item {
+/*    .overview-item {
         height: 220px;
         width: 145px;
     }
@@ -327,7 +343,7 @@ hr {
         height: 145px;
         width: 145px;
     }
-
+*/
     #responsive{
         padding-top: 10px;
     }
@@ -377,14 +393,15 @@ hr {
     .equidistant-container {
         padding: 0 130px;
     }
+    
+
     .overview-item {
-        height: 250px;
-        width: 165px;
+        width: 350px;
     }
 
     .overview-circle {
-        height: 165px;
-        width: 165px;
+        height: 350px;
+        width: 350px;
     }
 
     #responsive{
