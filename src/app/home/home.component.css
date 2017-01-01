@@ -65,7 +65,7 @@ hr {
 
 #overview {
     background-color: #333;
-    padding-bottom: 10px;
+    padding: 25px 25px 45px;
     text-align: center;
     margin: 0;
     width: initial;
@@ -98,7 +98,7 @@ hr {
     width: 220px;
     background-color: white;
     border-radius: 50%;
-    margin: auto;
+    margin: 45px auto 30px;
 }
 .no-overflow {
     overflow: hidden;
@@ -116,8 +116,27 @@ hr {
     display: inline-block;
 }
 
+#graphics {
+    /*background-color: #333;*/
+    /*background-color: #b2bbf6;*/
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0;
+    width: initial;
+}
+
+/*.graphics-circle {
+    height: 120px;
+    width: 120px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    display: inline-block;
+    margin: 5px;
+}*/
 .graphics-example{
-    /*background-color: lightsteelblue;*/
+    /*height: 100%;
+    width: 100%;*/
     height: 120px;
     width: 120px;
     margin: 5px;
@@ -125,8 +144,6 @@ hr {
 }
 
 .sites-example{
-    /*background-color: lightsteelblue;*/
-    /*height: 200px;*/
     width: calc(100vw - 10px);
     margin: 20px 5px 15px 5px;;
     display: inline-block;
@@ -182,6 +199,12 @@ hr {
     margin: 0;
 }
 
+/*big phones portrait*/
+@media screen and (min-width: 370px) {
+    #overview {
+        padding: 25px 35px 45px;
+    }
+}
 
 /*most phones landscape mode*/
 @media screen and (min-width : 500px){    
@@ -241,7 +264,13 @@ hr {
     }
 
     .overview-item {
-        height: initial;
+        width: 200px;
+    }
+
+    .overview-circle {
+        height: 200px;
+        width: 200px;
+        margin-top: 45px;
     }
 
     .laptop-example{
@@ -430,5 +459,18 @@ hr {
 
     .sites-example {
         width: calc(100vw - 500px);
+    }
+}
+
+/*iPad Pro Landscape*/
+@media screen and (min-width: 1366px) and (min-height: 1024px) {
+    .overview-item {
+        width: 300px;
+    }
+
+    .overview-circle {
+        height: 300px;
+        width: 300px;
+       /* margin-top: 45px;*/
     }
 }
