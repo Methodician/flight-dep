@@ -65,10 +65,11 @@ hr {
 
 #overview {
     background-color: #333;
-    padding: 25px 25px 45px;
+    padding: 50px 25px 70px;
     text-align: center;
     margin: 0;
     width: initial;
+    font-weight: 200;
 }   
 #overview h1, h2, h3, h4, p {
     color: white;
@@ -78,9 +79,13 @@ hr {
 }
 #overview p {
     margin: 5px 0;
+    font-size: large;
 }
 #awesome-p {
     margin: 0;
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-size: large;
 }
 .italic {
     font-style: italic;
@@ -94,11 +99,11 @@ hr {
 }
 
 .overview-circle {
-    height: 220px;
-    width: 220px;
-    background-color: white;
+    height: 200px;
+    width: 200px;
+    /*background-color: white;*/
     border-radius: 50%;
-    margin: 45px auto 30px;
+    margin: 50px auto 30px;
 }
 .no-overflow {
     overflow: hidden;
