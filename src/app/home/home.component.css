@@ -168,9 +168,14 @@ hr {
 
 #responsive, #icons, #graphics, #sites, #apps {
     /*padding-top: 20px;*/
-    padding: 40px 0 50px;
+    padding: 0px 0 50px;
 }
-
+.whiteBGtitle {
+    background-color: #fff;
+}
+.whiteBGtitle h2 {
+    color: #313131;
+}
 #responsive{
     text-align: center;
 }
@@ -179,7 +184,7 @@ hr {
 }
 .laptop-example{
     width: 85vw;
-    margin-top: -45px;
+    margin-top: -50px;
     margin-bottom: -80px;
 }
 .tablet-example{
@@ -191,12 +196,12 @@ hr {
 }
 
 #icons {
-    background-color: #333;
+    background-color: #466ed5;
     /*background-color: sandybrown;*/
     margin: 0;
     /*margin-bottom: 80px;*/
     width: 100vw;
-    padding: 30px 0px;
+    padding: 0px 0px 50px;
 }
 
 .web-screenshots {
