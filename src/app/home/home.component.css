@@ -64,7 +64,6 @@ hr {
 }
 
 #overview {
-    background-color: #333;
     padding: 50px 25px 70px;
     text-align: center;
     margin: 0;
@@ -83,6 +82,7 @@ hr {
 }
 #awesome-p {
     margin: 0;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 200;
     font-size: large;
@@ -170,6 +170,10 @@ hr {
     /*padding-top: 20px;*/
     padding: 0px 0 50px;
 }
+.darkBGtitle {
+    background-color: #333;
+    width: 100vw;
+}
 .whiteBGtitle {
     background-color: #fff;
 }
@@ -202,6 +206,10 @@ hr {
     /*margin-bottom: 80px;*/
     width: 100vw;
     padding: 0px 0px 50px;
+}
+#apps {
+    padding-bottom: 200px;
+    margin-bottom: -200px;
 }
 
 .web-screenshots {
