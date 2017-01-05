@@ -241,15 +241,15 @@ hr {
     #graphics, 
     #sites, 
     #apps {
-        padding: 40px 0 50px;
+        padding: 0 0 50px;
     }
     
     .laptop-example{
-        margin-top: -85px;
+        margin-top: -120px;
     }
 
     #icons {
-        padding: 25px 80px;
+        padding: 0 80px 40px;
     }
 
     .tablet-example, .mobile-example {
@@ -291,9 +291,9 @@ hr {
         margin-top: 45px;
     }
 
-    .laptop-example{
+    /*.laptop-example{
         margin-top: -105px;
-    }
+    }*/
 
     .tablet-example, .mobile-example {
         margin-top: -115px;
@@ -302,6 +302,10 @@ hr {
 
 /*iPad portrait mode*/
 @media screen and (min-width : 760px){
+    #overview {
+        padding: 70px 50px 85px;
+    }
+
     .container {
         width: initial;
     }
@@ -350,9 +354,15 @@ hr {
         width: 130px;
     }*/
 
+    #graphics, 
+    #sites,
     #icons {
-        padding: 30px 0px;
+        padding: 0 0 50px;
     }
+
+    /*#icons {
+        padding: 30px 0px;
+    }*/
 }
 
 /*iPad landscape mode*/
