@@ -10,11 +10,12 @@ export class ContactService {
   constructor(
     private http: Http,
     @Inject(FirebaseRef) fb
-    ) {
+  ) {
     this.sdkDb = fb.database().ref();
   }
 
   submitContact(form: any) {
+    form.date_received = Date.now();
     return this.sdkDb.child('contacts').push(form);
   }
 
